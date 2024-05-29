@@ -341,6 +341,10 @@ O **TestNG** é utilizado em testes de API REST para automatizar a execução de
 
 ### 4.2 Adicionar o TestNG plugin na IDE Eclipse
 <br>
+**_Para obter a documentação do TestNG acessar a URL._**
+
+https://github.com/testng-team/testng-eclipse
+<br>
 
 **1** Na IDE Eclipse, acessar o Menu Help, opção Install New Software.
 <br>
@@ -348,11 +352,6 @@ O **TestNG** é utilizado em testes de API REST para automatizar a execução de
 **2** No campo **"Work with:"** digitar a seguinte URL de instação do TestNG.
 <br>
 https://testng.org/testng-eclipse-update-site
-
-**_Para obter a documentação do TestNG acessar a URL._**
-
-https://github.com/testng-team/testng-eclipse
-
 <br>
 
 **3** Clicar no botão **"ADD"**
