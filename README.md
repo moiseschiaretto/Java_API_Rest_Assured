@@ -400,7 +400,8 @@ https://github.com/testng-team/testng-eclipse
 <br>
 <br>
 
-<img width="572" alt="26_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/f37b8401-4219-4e38-9a76-eeef1bc79165">
+<img width="572" alt="26_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/2b8fbc18-12ae-4137-b618-e69e3f583abf">
+
 
 <br>
 <br>
