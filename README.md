@@ -9,10 +9,13 @@ Descrição das explicações de cada item da 'estrutura do projeto "API REST co
 Objetivo é desenvolver cenários de testes em Java com API REST com Rest Assured e TestNG utilizando os métodos / verbos HTTP (Get, Post, Put, Patch, Delete).
 
 
-![01_Java](https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/f67c7d91-841a-4291-a944-b7e8a68885e7)
+![01_Java](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/c8f6e7b0-c6ec-47f3-a11f-17f62069c885)
 
 
-![02_API_REST](https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/fd9b9f9f-12b2-4937-873f-071e506e6b5f)
+
+![02_API_REST](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/dabac376-7ec3-46ee-957c-32d88195f9bc)
+
+
 
 <br>
 
@@ -29,7 +32,9 @@ Este arquivo contém todas as dependências do projeto, do **Apache Maven**, sit
 https://mvnrepository.com
 
 
-![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/3e6a732a-00ef-4f76-a796-1f67bfc35fed)
+![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/dd626147-718b-495d-a6cd-227ebddbe8a9)
+
+
 
 <br>
 
@@ -73,18 +78,23 @@ O **TestNG** é utilizado em testes de API REST para automatizar a execução de
 CRUD com os verbos HTTP, métodos GetAll, GetId, Post, Put, Patch, Delete.
 
 
-![04_Verbos_HTTP_API_REST](https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/1e91722e-6019-476e-93b7-cdd6fce30bc3)
+![04_Verbos_HTTP_API_REST](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/7ca7d942-54ba-4d16-a1ff-1a192b52bc86)
+
 
 <br>
 
-![05_Piramide_Testes](https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/20cfe1e5-55e0-4111-b746-f4680227b86c)
+
+![05_Piramide_Testes](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/9b2a370b-1b74-458e-b158-b281456d6055)
+
 
 
 <br>
 
 ## Script simples do Rest Assured
 
-![03_API_REST_ASSURED_BDD](https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/6c608c72-5078-482f-8844-2111d69d0e6e)
+
+![03_API_REST_ASSURED_BDD](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/2376ed5a-9018-46f5-a7a4-7254944202f9)
+
 
 ### Sintaxe do Rest Assured.io é semelhante a escrita do BDD em Gherkin.
 
@@ -109,7 +119,9 @@ Then()
 ### Explicações das palavras-chaves utilizadas no Rest Assured, semelhante a escrita do BDD em Gherkin.
 
 
-<img width="915" alt="image" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/e78d0ddb-b724-4d92-8395-49eef3ec2966">
+<img width="910" alt="11_Sintaxe_Rest_Assured" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/c71e31f7-e5a1-4489-a89c-20bcdc24d3f3">
+
+
 
 <br>
 
@@ -135,7 +147,8 @@ Then()
 https://www.oracle.com/java/technologies/downloads
 
 
-<img width="175" alt="00_JDK" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/fa406197-a369-4d89-bcce-d8295e7ebacb">
+<img width="175" alt="00_JDK" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/0f84f83b-8fdd-4723-8b49-fd01bc10381f">
+
 
 
 **Após a instalação do "Java JDK" digitar no "Prompt de Comando no Modo Administrador" o seguinte comando.**
@@ -146,7 +159,8 @@ java --version
 
 ```
 
-<img width="569" alt="12_Java_JDK_Version" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/c9319fe2-ccc3-419b-b407-0ffc14ae4e83">
+<img width="569" alt="12_Java_JDK_Version" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/50103efb-11c0-4e46-a68f-049d548fc050">
+
 
 
 <br>
@@ -158,7 +172,9 @@ java --version
 https://www.eclipse.org/downloads
 
 
-<img width="329" alt="10_Logo_IDE_Eclipse" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/2e77ed9d-762a-4776-af0a-3c730c2e58c0">
+<img width="329" alt="10_Logo_IDE_Eclipse" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/6e6886d1-5986-4e75-a319-640332cd6249">
+
+
 
 <br>
 <br>
@@ -170,7 +186,8 @@ https://www.eclipse.org/downloads
 https://maven.apache.org/download.cgi
 
 
-<img width="668" alt="13_Maven_Download" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/13b4393c-99be-43a8-a7cf-64e9bd3a8182">
+<img width="668" alt="13_Maven_Download" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/ac223baf-b7f7-475a-be75-41cd30f22c32">
+
 
 <br>
 <br>
@@ -182,13 +199,15 @@ A dependência "rest-assured" é uma biblioteca Java que simplifica a automaçã
 
 <br>
 
-<img width="308" alt="15_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/4a5bee81-2d5f-43b3-949f-96706e72440b">
+<img width="308" alt="15_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/46bad5e1-39e5-433d-abf9-3f9875d030d1">
+
 
 <br>
 <br>
 <br>
 
-<img width="442" alt="16_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/ebd443e3-22df-480c-b0a8-a51cc7b6b552">
+<img width="442" alt="16_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/d96af7e6-af91-4a2e-8f47-21c88cf1ff42">
+
 
 <br>
 <br>
@@ -196,7 +215,8 @@ A dependência "rest-assured" é uma biblioteca Java que simplifica a automaçã
 
 ### Variável de Ambiente do Java JDK "JAVA_HOME"
 
-<img width="467" alt="17_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/24b60433-9698-4d59-8b11-e1d92e58a5e3">
+<img width="467" alt="17_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/f9cf7ded-40d1-41d9-b617-1bd56f81d855">
+
 
 <br>
 <br>
@@ -204,19 +224,23 @@ A dependência "rest-assured" é uma biblioteca Java que simplifica a automaçã
 
 ### Variável de Ambiente Apache Maven "M2_HOME"
 
-<img width="467" alt="18_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/9ceb7b93-a8b9-48d2-ace2-ffdb5e71c727">
+
+<img width="467" alt="18_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/418c9c76-ef6c-430a-8fbe-a5ab3a1a92fa">
+
 
 <br>
 <br>
 <br>
 
-<img width="442" alt="19_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/03671114-ae00-4313-8614-ba67d4c4dabf">
+<img width="442" alt="19_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/93aa4a14-67c6-4697-bf19-35a9b3fbe866">
+
 
 <br>
 <br>
 <br>
 
-<img width="377" alt="20_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/a37b48d5-6f11-49ea-ac41-5a7a57f56dc6">
+<img width="377" alt="20_Variavel_Ambiente_SO_Windows" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/61af79d5-4082-4fd6-b05a-1dba1a656156">
+
 
 <br>
 <br>
@@ -234,7 +258,7 @@ mvn --version
 
 <br>
 
-<img width="568" alt="14_Maven_Download" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/1ef56a5b-8e46-4a60-9363-4f2a5803afee">
+<img width="568" alt="14_Maven_Download" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/ac6ac7a0-5afb-4dbb-8a9b-4634185f8ed5">
 
 
 <br>
@@ -245,7 +269,9 @@ mvn --version
 
 https://mvnrepository.com
 
-![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/99cb7143-063b-4801-91cf-ef8553f5d993)
+
+![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/96204bf9-affd-421d-8ff9-9778189f58e8)
+
 
 <br>
 
@@ -343,27 +369,32 @@ https://github.com/testng-team/testng-eclipse
 <br>
 <br>
 
-<img width="676" alt="21_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/1b16c8d5-8c76-4c2a-95d3-d43dff00e18e">
+<img width="676" alt="21_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/4ea68219-0ef3-4ff1-bbf8-649743984851">
+
 
 <br>
 <br>
 
-<img width="672" alt="22_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/be1a7bf0-4410-49b8-8ec3-05a6b5d31867">
+<img width="672" alt="22_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/ada2cf5a-9f2d-4e3a-91ae-b210e2768edb">
+
 
 <br>
 <br>
 
-<img width="676" alt="23_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/4bdcfe54-df34-4418-af94-9ed40f67c053">
+<img width="676" alt="23_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/b80120d6-25fa-475b-a189-09c21c6e61d6">
+
 
 <br>
 <br>
 
-<img width="676" alt="24_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/bd572f56-2b02-4fc2-b0db-1f8189b5c001">
+<img width="676" alt="24_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/15a0f211-767d-4e21-9045-2cb1668df0d8">
+
 
 <br>
 <br>
 
-<img width="676" alt="25_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_REST/assets/84775466/513e94e4-d24e-49ea-a9b8-6bb75072e6d1">
+
+<img width="676" alt="25_TestNG_Plugin" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/33516f23-7de2-47cf-92c7-af163e8844f0">
 
 
 <br>
