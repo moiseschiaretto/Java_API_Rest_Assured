@@ -63,7 +63,7 @@ When()
         .method()
 Then() 
         .statusCode(XXX)
-        .body("e", ”f", equalTo("g"))
+        .body("e", equalTo("g"))
         .log().body()
 ;
 
