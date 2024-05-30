@@ -79,10 +79,10 @@ Then()
 
 |Keyword	|Explicações das palavras-chaves utilizadas em Rest Assured.io	|
 |---------------|---------------|
-|Dado()		|Given() é um método usado em testes de API para configurar o estado inicial da solicitação HTTP, definindo parâmetros, cabeçalhos e autenticação antes de enviar a solicitação.		|
-|Quando()	|When() é um método usado em testes de API para enviar uma solicitação HTTP com os parâmetros configurados anteriormente pelo método Given(), simulando uma interação com a API.		|
-|Método()	|Method() é um método usado em testes de API para especificar o tipo de método HTTP (GET, POST, PUT, DELETE, etc.) a ser usado na solicitação. Ele define a ação a ser realizada na API durante o teste.		|
-|Então()	|Then() é um método usado em testes de API para verificar o resultado da solicitação HTTP, como o código de status, o corpo da resposta ou outras condições esperadas, validando se a interação com a API ocorreu conforme o esperado.		|
+|**Dado()**	|**Given()** é um método usado em testes de API para configurar o estado inicial da solicitação HTTP, definindo parâmetros, cabeçalhos e autenticação antes de enviar a solicitação.		|
+|**Quando()**	|**When()** é um método usado em testes de API para enviar uma solicitação HTTP com os parâmetros configurados anteriormente pelo método Given(), simulando uma interação com a API.		|
+|**Método()**	|**Method()** é um método usado em testes de API para especificar o tipo de método HTTP (GET, POST, PUT, DELETE, etc.) a ser usado na solicitação. Ele define a ação a ser realizada na API durante o teste.		|
+|**Então()**	|**Then()** é um método usado em testes de API para verificar o resultado da solicitação HTTP, como o código de status, o corpo da resposta ou outras condições esperadas, validando se a interação com a API ocorreu conforme o esperado.		|
 <br>
 
 ## Anotações utilizadas no TestNG @Test
