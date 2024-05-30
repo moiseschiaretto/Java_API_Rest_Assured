@@ -13,7 +13,7 @@ O objetivo é desenvolver cenários de testes em Java com API REST com Rest Assu
 
 |Java		|APACHE MAVEN	|TestNG		|API REST ASSURED	|IDE ECLIPSE	|
 |---------------|---------------|---------------|-----------------------|---------------|
-| ![01_Java](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/c8f6e7b0-c6ec-47f3-a11f-17f62069c885) | <img width="172" alt="00_Logo_TestNG_JAVA" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/eaa8f57e-8fde-43e3-bb17-f58c57b2e670"> | <img width="172" alt="00_Logo_TestNG_JAVA" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/5bbb31d5-caed-4771-86fb-b0571e431141"> | ![03_API_REST_ASSURED_BDD](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/f097a0a6-a384-4866-88c6-fe3492eb61b4) | <img width="329" alt="10_Logo_IDE_Eclipse" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/884a2937-1818-4ebb-be34-ff1e5982583f"> |
+| ![01_Java](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/c8f6e7b0-c6ec-47f3-a11f-17f62069c885) | ![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/a692420d-74ac-4bfb-9136-525a45f3f4c4) | <img width="172" alt="00_Logo_TestNG_JAVA" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/5bbb31d5-caed-4771-86fb-b0571e431141"> | ![03_API_REST_ASSURED_BDD](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/f097a0a6-a384-4866-88c6-fe3492eb61b4) | <img width="329" alt="10_Logo_IDE_Eclipse" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/884a2937-1818-4ebb-be34-ff1e5982583f"> |
 
 
 
