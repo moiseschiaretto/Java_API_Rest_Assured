@@ -119,8 +119,7 @@ Then()
 ### Explicações das palavras-chaves utilizadas no Rest Assured, semelhante a escrita do BDD em Gherkin.
 
 
-
-<img width="608" alt="image" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/5c5e113f-c797-47be-a4b6-41372e1bb77b">
+<img width="608" alt="11_Sintaxe_Rest_Assured" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/8643c874-7b74-4911-9635-5e3fad2364f4">
 
 
 <br>
