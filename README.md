@@ -112,11 +112,11 @@ Then()
 
 ### 5. Criar um _"Maven Project"_
 
-### 6. Adicionar as dependências no arquivo "pom.xml" do Projeto
+### 6. Adicionar as dependências no arquivo "pom.xml" do _"Maven Project"_
 
 ### 7. Instalar o "TesteNG" plugin
 
-### 8. Adicionar a "Library TestNG" no Projeto em "Java Build Path"
+### 8. Adicionar a "Library TestNG" no _"Maven Project"_ em "Java Build Path"
 
 ### 9. Criar uma classe "TestNG class"
 
