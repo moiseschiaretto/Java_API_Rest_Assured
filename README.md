@@ -36,6 +36,12 @@ CRUD com os verbos HTTP, métodos GetAll, GetId, Post, Put, Patch, Delete.
 ![04_Verbos_HTTP_API_REST](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/7ca7d942-54ba-4d16-a1ff-1a192b52bc86)
 
 
+-------------------------------------------------
+|		|		|		|
+-------------------------------------------------
+|		|		|		|
+-------------------------------------------------
+
 <br>
 
 
