@@ -44,7 +44,7 @@ A dependência **"rest-assured"** é uma biblioteca Java que simplifica a automa
 
 <br>
 
-O **TestNG** é utilizado em testes de API REST para automatizar a execução de casos de teste, verificar a integridade das respostas da API (status HTTP, conteúdo do corpo) e gerar relatórios detalhados sobre os resultados dos testes, simplificando a garantia da qualidade do software.
+O **TestNG** é um framework de teste para Java, é utilizado em testes de API REST para automatizar a execução de casos de testes, verificar a integridade das respostas da API (status HTTP, conteúdo do corpo) e gerar relatórios detalhados sobre os resultados dos testes, simplificando a garantia da qualidade do software.
 
 
 ```
