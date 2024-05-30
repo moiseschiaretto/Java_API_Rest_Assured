@@ -88,7 +88,7 @@ Then()
 ## Anotações utilizadas no TestNG @Test
 <br>
 
-### _Em construção ..._
+O **"TestNG"** executará os métodos **@Test** de duas formas sendo em **"ordem alfabética dos nomes dos métodos (letra inicial do nome)"** ou por **"prioridade especificada no parâmetro _(priority = 1)_"**, conforme o exmplo abaixo.
 
 ```
 
@@ -118,8 +118,34 @@ public class ExemploTestNG {
 
 ```
 <br>
+
+**O resultado da execução neste exemplo acima será a seguinte.**
+
+```
+
+Method C
+Method B
+Method A
+Method D
+
+```
 <br>
 
+**Sem especificar o parâmtro _(priority = 1)_ por exemplo, a execução dos métodos "seria" em _ordem alfabética dos nomes dos métodos (letra inicial do nome)_, conforme o exemplo de resultado abaixo.**
+
+
+```
+
+Method A
+Method B
+Method C
+Method D
+
+```
+
+
+
+<br>
 
 ***
 
