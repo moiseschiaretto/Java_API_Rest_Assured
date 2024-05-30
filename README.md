@@ -15,6 +15,11 @@ O objetivo é desenvolver cenários de testes em Java com API REST com Rest Assu
 
 
 
+<img width="172" alt="00_Logo_TestNG_JAVA" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/eaa8f57e-8fde-43e3-bb17-f58c57b2e670">
+
+
+
+
 ![02_API_REST](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/dabac376-7ec3-46ee-957c-32d88195f9bc)
 
 
@@ -405,6 +410,12 @@ O **TestNG** é utilizado em testes de API REST para automatizar a execução de
 **_Para obter a documentação do TestNG acessar a URL._**
 
 https://github.com/testng-team/testng-eclipse
+<br>
+
+<img width="172" alt="00_Logo_TestNG_JAVA" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/36595bac-a3da-40d0-b29a-f742c54a2019">
+
+
+<br>
 <br>
 
 **1** Na IDE Eclipse, acessar o Menu Help, opção Install New Software.
