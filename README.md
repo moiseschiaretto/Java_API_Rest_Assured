@@ -95,6 +95,8 @@ O **"TestNG"** executará os métodos **@Test** de duas formas sendo em **"ordem
 
 **Pode haver uma chance de que os métodos contenham a mesma prioridade. Nesses casos, _"TestNG"_ considera a ordem alfabética dos nomes dos métodos cuja prioridade é a mesma.**
 <br>
+<br>
+<br>
 
 
 ```
