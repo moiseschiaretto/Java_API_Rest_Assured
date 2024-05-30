@@ -316,7 +316,22 @@ mvn --version
 
 ### 5. Criar um _"Maven Project"_
 
+Ao acessar a **"IDE Eclipse"** clicar no painel "Package Explorer" à esquerda na opção **_"Create a Maven project"_**, outra forma é seguir os passos abaixo.
 
+**1.** Acessar o Menu File >> New > **Maven Project**
+
+**2.** Na tela **"New Maven Project"**, selecionar a opção **_"Create a simple project (skip archetype selection)"_**
+
+**3.** Clicar no botão **Next**
+
+**4.** Informar no campo **_Group Id_** o nome do pacote, exemplo [com.automation.api]
+
+**5.** Informar no campo **_Class name_** o nome do "classe TestNG", **IMPORTANTE** _este nome da classe TestNG deverá ser em caixa baixa_
+
+**6.** Clicar no botão **Finish**
+
+
+### IMG 
 
 
 
@@ -456,9 +471,35 @@ https://testng.org/testng-eclipse-update-site
 
 # _Em construção ..._
 
+
 ### 8. Adicionar a "Library TestNG" no Projeto em "Java Build Path"
 
+
+
+
 ### 9. Criar uma classe "TestNG class"
+
+Selecionar a pasta "XXXXXXXXXXXXXXX" do _"Maven Project"_ e seguir o passo a passo abaixo.
+
+**1.** Acessar o Menu File >> New > **Other**
+
+**2.** Na tela **"Select a wizard"**, selecionar a opção **_"TestNG class"_**
+
+**3.** Clicar no botão **Next**
+
+**4.** Informar no campo **_Source folder_** a pasta do **Maven Project**
+
+**5.** Informar no campo **_Package name_** o nome do pacote, exemplo [com.automation.api]
+
+**6.** Informar no campo **_Class name_** o nome do "classe TestNG", **IMPORTANTE** _este nome da classe TestNG deverá ser em caixa baixa_
+
+**7.** Clicar no botão **Finish**
+
+
+### IMG ....
+
+
+
 
 ### 10. Testar nesta classe TestNG a opção "Run As" e verificar se têm a opção execução "TestNG Test"
 
