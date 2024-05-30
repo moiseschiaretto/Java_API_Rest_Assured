@@ -478,9 +478,11 @@ https://testng.org/testng-eclipse-update-site
 
 
 
+***
+
 ### 9. Criar uma classe "TestNG class"
 
-Selecionar a pasta **"src/test/java"** do _"Maven Project"_ e seguir o passo a passo abaixo.
+Selecionar a pasta **"/test_api/src/test/java"** do _"Maven Project"_ e seguir o passo a passo abaixo.
 
 **1.** Acessar o Menu File >> New > **Other**
 
@@ -490,24 +492,29 @@ Selecionar a pasta **"src/test/java"** do _"Maven Project"_ e seguir o passo a p
 
 **4.** Informar no campo **_Source folder_** a pasta do **Maven Project**
 
-**5.** Informar no campo **_Package name_** o nome do pacote, exemplo [com.automation.api]
+**5.** Informar no campo **_Package name_** o nome do pacote, exemplo [automation.api]
 
 **6.** Informar no campo **_Class name_** o nome do "classe TestNG", **IMPORTANTE** _este nome da classe TestNG deverá ser em caixa baixa_
 
 **7.** Clicar no botão **Finish**
+<br>
+<br>
 
+<img width="468" alt="31_Library_TestNG_Maven_Project" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/afedeb17-67ed-4a7a-b975-9e9ac5a2140d">
+<br>
+<br>
 
+<img width="447" alt="32_Library_TestNG_Maven_Project" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/25ae0fa3-0d22-4c12-91a6-7607956ad127">
+<br>
+<br>
 
-
-
+<img width="398" alt="33_Library_TestNG_Maven_Project" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/53da8089-278a-421f-9db9-76206b5b9cea">
+<br>
+<br>
 
 
 ### 10. Testar nesta classe TestNG a opção "Run As" e verificar se têm a opção execução "TestNG Test"
-
-
-***
-
-
+<br>
 
 
 
