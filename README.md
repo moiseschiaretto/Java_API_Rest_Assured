@@ -74,7 +74,7 @@ Then()
 
 <br>
 
-### Explicações das palavras-chaves utilizadas no Rest Assured, semelhante a escrita do BDD em Gherkin.
+### Explicações das palavras-chaves (keywords) utilizadas no Rest Assured, semelhante a escrita do BDD em Gherkin.
 <br>
 
 |Keyword	|Explicações das palavras-chaves utilizadas em Rest Assured.io	|
