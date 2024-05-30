@@ -8,7 +8,7 @@ Descrição das explicações de cada item da estrutura do projeto "API REST com
 
 O objetivo é desenvolver cenários de testes em Java com API REST com Rest Assured e TestNG utilizando os métodos / verbos HTTP (Get, Post, Put, Patch, Delete).
 
-### Consultar no final desta documentação o _tópico_ "Configuração do Ambiente de Trabalho" e o _subtópico_ "Pré-requisitos"
+### Consultar no final desta documentação o _tópico_ "Configuração do Ambiente de Trabalho" e o _subtópico_ "Pré-requisitos".
 <br>
 
 |Java		|Apache Maven	|TestNG		|API Rest Assured	|IDE Eclipse	|
