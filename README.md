@@ -4,7 +4,7 @@
 
 Autor Moisés Ademir Chiaretto
 
-Descrição das explicações de cada item da 'estrutura do projeto "API REST com Rest Assured" desenvolvido'.
+Descrição das explicações de cada item da estrutura do projeto "API REST com Rest Assured" desenvolvido.
 
 Objetivo é desenvolver cenários de testes em Java com API REST com Rest Assured e TestNG utilizando os métodos / verbos HTTP (Get, Post, Put, Patch, Delete).
 
