@@ -162,11 +162,11 @@ Method D
 
 ### Pré-requisitos
 
-### 1. Java JDK
+### 1. Instalar o Java JDK
 
-### 2. IDE (Eclipse, IntelliJ, etc)
+### 2. Instalar uma IDE (Eclipse, IntelliJ, etc)
 
-### 3. Maven
+### 3. Instalar o Apache Maven
 
 ### 4. Configurar as Variáveis de Ambiente "JAVA_HOME" e "M2_HOME"
 
