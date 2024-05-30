@@ -82,6 +82,18 @@ Then()
 
 ***
 
+## Anotações utilizadas no TestNG @Test
+<br>
+
+### _Em construção ..._
+
+
+<br>
+<br>
+
+
+***
+
 ## Configuração do Ambiente de Trabalho
 
 
