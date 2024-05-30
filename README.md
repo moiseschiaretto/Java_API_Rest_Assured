@@ -120,7 +120,8 @@ Then()
 
 
 
-<img width="608" alt="11_Sintaxe_Rest_Assured" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/13d05338-ade0-4f98-a5e4-3194a41e8740">
+<img width="608" alt="image" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/5c5e113f-c797-47be-a4b6-41372e1bb77b">
+
 
 <br>
 
