@@ -105,18 +105,17 @@ Then()
 
 ### 4. Configurar as Variáveis de Ambiente "JAVA_HOME" e "M2_HOME"
 
-### 5. TesteNG
+### 5. Criar um _"Maven Project"_
 
-### 6. Criar o Projeto
+### 6. Adicionar as dependências no arquivo "pom.xml" do Projeto
 
-### 7. Adicionar as dependências no arquivo "pom.xml" do Projeto
+### 7. Instalar o "TesteNG" plugin
 
 ### 8. Adicionar a "Library TestNG" no Projeto em "Java Build Path"
 
 ### 9. Criar uma classe "TestNG class"
 
 ### 10. Testar nesta classe TestNG a opção "Run As" e verificar se têm a opção execução "TestNG Test"
-
 
 
 ***
@@ -245,8 +244,75 @@ mvn --version
 <br>
 <br>
 
+***
 
-### 5. TestNG
+
+# _Em construção ..._
+
+### 5. Criar um _"Maven Project"_
+
+
+
+
+
+
+
+***
+
+
+### 6. Adicionar as dependências no Arquivo "pom.xml" do Projeto
+
+Abaixo consta o link do **repositório do "Apache Maven"** para pesquisar e copiar as dependências do projeto que serão adicionadas ao **arquivo "pom.xml"** do projeto criado.
+<br>
+
+https://mvnrepository.com
+
+
+![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/96204bf9-affd-421d-8ff9-9778189f58e8)
+
+
+<br>
+
+### Dependência do Arquivo "pom.xml", _"rest-assured"_
+<br>
+
+A dependência **"rest-assured"** é uma biblioteca Java que simplifica a automação de testes de API REST, oferecendo uma interface fluente para enviar requisições HTTP e validar respostas. Ela é amplamente utilizada para escrever testes automatizados que verificam a funcionalidade e integridade das APIs REST em aplicativos Java.
+<br>
+
+### Dependência do Arquivo "pom.xml", _"TestNG"_
+
+O **TestNG** é utilizado em testes de API REST para automatizar a execução de casos de teste, verificar a integridade das respostas da API (status HTTP, conteúdo do corpo) e gerar relatórios detalhados sobre os resultados dos testes, simplificando a garantia da qualidade do software.
+
+
+```
+
+<dependencies>
+
+	<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+	<dependency>
+		<groupId>io.rest-assured</groupId>
+		<artifactId>rest-assured</artifactId>
+		<version>5.4.0</version>
+		<scope>test</scope>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+		<groupId>org.testng</groupId>
+		<artifactId>testng</artifactId>
+		<version>7.10.2</version>
+		<scope>test</scope>
+	</dependency>
+
+</dependencies>
+
+```
+
+<br>
+<br>
+
+
+### 7. Instalar o "TesteNG" plugin
 <br>
 
 O **TestNG** é utilizado em testes de API REST para automatizar a execução de casos de teste, verificar a integridade das respostas da API (status HTTP, conteúdo do corpo) e gerar relatórios detalhados sobre os resultados dos testes, simplificando a garantia da qualidade do software.
@@ -325,11 +391,6 @@ https://testng.org/testng-eclipse-update-site
 
 # _Em construção ..._
 
-
-### 6. Criar o Projeto
-
-### OK >> 7. Adicionar as dependências no Arquivo "pom.xml" do Projeto
-
 ### 8. Adicionar a "Library TestNG" no Projeto em "Java Build Path"
 
 ### 9. Criar uma classe "TestNG class"
@@ -341,55 +402,6 @@ https://testng.org/testng-eclipse-update-site
 
 
 
-### 7. Adicionar as dependências no Arquivo "pom.xml" do Projeto
 
-Abaixo consta o link do **repositório do "Apache Maven"** para pesquisar e copiar as dependências do projeto que serão adicionadas ao **arquivo "pom.xml"** do projeto criado.
-<br>
-
-https://mvnrepository.com
-
-
-![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/96204bf9-affd-421d-8ff9-9778189f58e8)
-
-
-<br>
-
-### Dependência do Arquivo "pom.xml", _"rest-assured"_
-<br>
-
-A dependência **"rest-assured"** é uma biblioteca Java que simplifica a automação de testes de API REST, oferecendo uma interface fluente para enviar requisições HTTP e validar respostas. Ela é amplamente utilizada para escrever testes automatizados que verificam a funcionalidade e integridade das APIs REST em aplicativos Java.
-<br>
-
-### Dependência do Arquivo "pom.xml", _"TestNG"_
-
-O **TestNG** é utilizado em testes de API REST para automatizar a execução de casos de teste, verificar a integridade das respostas da API (status HTTP, conteúdo do corpo) e gerar relatórios detalhados sobre os resultados dos testes, simplificando a garantia da qualidade do software.
-
-
-```
-
-<dependencies>
-
-	<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-	<dependency>
-		<groupId>io.rest-assured</groupId>
-		<artifactId>rest-assured</artifactId>
-		<version>5.4.0</version>
-		<scope>test</scope>
-	</dependency>
-
-	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-	<dependency>
-		<groupId>org.testng</groupId>
-		<artifactId>testng</artifactId>
-		<version>7.10.2</version>
-		<scope>test</scope>
-	</dependency>
-
-</dependencies>
-
-```
-
-<br>
-<br>
 
 
