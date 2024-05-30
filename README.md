@@ -118,9 +118,9 @@ Then()
 
 ### 8. Adicionar a "Library TestNG" no _"Maven Project"_ em "Java Build Path"
 
-### 9. Criar uma classe "TestNG class"
+### 9. Criar uma classe _"TestNG class"_
 
-### 10. Testar nesta classe TestNG a opção "Run As" e verificar se têm a opção execução "TestNG Test"
+### 10. Testar nesta classe TestNG a opção _"Run As"_ e verificar se têm a opção execução _"TestNG Test"_
 
 
 ***
