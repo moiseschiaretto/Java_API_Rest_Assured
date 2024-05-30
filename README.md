@@ -35,12 +35,6 @@ CRUD com os verbos HTTP, métodos GetAll, GetId, Post, Put, Patch, Delete.
 
 ![04_Verbos_HTTP_API_REST](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/7ca7d942-54ba-4d16-a1ff-1a192b52bc86)
 
-|xxxxxx		|yyyyyyy	|zzzzzz		|
-|---------------|---------------|---------------|
-|aaaaa		|bbbb		|cccc		|
-|aaaaa		|bbbb		|cccc		|
-
-
 <br>
 
 
@@ -52,6 +46,10 @@ CRUD com os verbos HTTP, métodos GetAll, GetId, Post, Put, Patch, Delete.
 
 ## Script simples do Rest Assured
 
+|xxxxxx		|yyyyyyy	|
+|---------------|---------------|
+|aaaaa		|bbbb		|
+|aaaaa		|bbbb		|
 
 ![03_API_REST_ASSURED_BDD](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/2376ed5a-9018-46f5-a7a4-7254944202f9)
 
