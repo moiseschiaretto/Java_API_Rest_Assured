@@ -80,7 +80,6 @@ Then()
 
 <br>
 
-***
 
 ## Anotações utilizadas no TestNG @Test
 <br>
@@ -345,7 +344,7 @@ https://testng.org/testng-eclipse-update-site
 
 ### 7. Adicionar as dependências no Arquivo "pom.xml" do Projeto
 
-Abaixo consta o link do **repositório do "Apache Maven"** para pesquisar e copiar as dependências do projeto que serão adicionadas ao arquivo "pom.xml" do projeto criado.
+Abaixo consta o link do **repositório do "Apache Maven"** para pesquisar e copiar as dependências do projeto que serão adicionadas ao **arquivo "pom.xml"** do projeto criado.
 <br>
 
 https://mvnrepository.com
