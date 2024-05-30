@@ -540,6 +540,13 @@ Selecionar a pasta **"/test_api/src/test/java"** do _"Maven Project"_ e seguir o
 ### 10. Testar nesta classe TestNG a opção "Run As" e verificar se têm a opção execução "TestNG Test"
 <br>
 
+Selecionar a **_"classe TestNG"_** criada, clicar com o botão direito do mouse sobre a classe, opção **"Run As''** e validar se existe a opção de execução com o **TestNG Test**, conforme a imagem abaixo.
+
+<br>
+<br>
+<img width="863" alt="38_Run_As_TestNG" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/2cb1b536-2c35-42ba-900b-27cefd152cf8">
+
+
 
 
 
