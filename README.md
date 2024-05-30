@@ -498,6 +498,10 @@ Selecionar o _"Maven Project"_ criado e seguir o passo a passo abaixo.
 
 <br>
 <br>
+<img width="177" alt="37_ADD_Library_TestNG_Maven_Project" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/9d90a250-ae42-4a21-93ec-5119dfc45845">
+
+<br>
+<br>
 
 
 ### 9. Criar uma classe "TestNG class"
@@ -528,14 +532,9 @@ Selecionar a pasta **"/test_api/src/test/java"** do _"Maven Project"_ e seguir o
 <br>
 <br>
 
-<img width="398" alt="33_Library_TestNG_Maven_Project" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/53da8089-278a-421f-9db9-76206b5b9cea">
+<img width="399" alt="33_Library_TestNG_Maven_Project" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/d1483b85-17b1-4568-8443-41be36ce0b12">
 <br>
 <br>
-
-<img width="177" alt="37_ADD_Library_TestNG_Maven_Project" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/c918a925-e796-49fb-965f-d2f75c313251">
-<br>
-<br>
-
 
 
 ### 10. Testar nesta classe TestNG a opção "Run As" e verificar se têm a opção execução "TestNG Test"
