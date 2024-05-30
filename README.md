@@ -309,10 +309,6 @@ mvn --version
 <br>
 <br>
 
-***
-
-
-# _Em construção ..._
 
 ### 5. Criar um _"Maven Project"_
 
@@ -324,20 +320,25 @@ Ao acessar a **"IDE Eclipse"** clicar no painel "Package Explorer" à esquerda n
 
 **3.** Clicar no botão **Next**
 
-**4.** Informar no campo **_Group Id_** o nome do pacote, exemplo [com.automation.api]
+**4.** Informar no campo **_Group Id_** é a identificação única do grupo do projeto, exemplo [com.automation.api]
 
-**5.** Informar no campo **_Class name_** o nome do "classe TestNG", **IMPORTANTE** _este nome da classe TestNG deverá ser em caixa baixa_
+**5.** Informar no campo **_Artifact Id_** é o nome único do artefato do projeto (geralmente um JAR, WAR ou EAR), exemplo [test_api]
 
-**6.** Clicar no botão **Finish**
+**6.** Clicar no botão **Finish**.
+<br>
+<br>
 
+<img width="429" alt="27_Criar_Maven_Project" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/0717055c-963b-4d70-b69a-7463ec4af10a">
+<br>
+<br>
 
-### IMG 
+<img width="429" alt="28_Criar_Maven_Project" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/a5b7a4d0-0bb3-4d48-9181-7f759a3010ec">
+<br>
+<br>
 
-
-
-
-
-***
+<img width="177" alt="29_Criar_Maven_Project" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/98e61fcd-81ba-4c28-aef1-8271a084f4a2">
+<br>
+<br>
 
 
 ### 6. Adicionar as dependências no Arquivo "pom.xml" do Projeto
@@ -496,7 +497,7 @@ Selecionar a pasta **"src/test/java"** do _"Maven Project"_ e seguir o passo a p
 **7.** Clicar no botão **Finish**
 
 
-### IMG ....
+
 
 
 
