@@ -479,7 +479,7 @@ https://testng.org/testng-eclipse-update-site
 
 ### 9. Criar uma classe "TestNG class"
 
-Selecionar a pasta "XXXXXXXXXXXXXXX" do _"Maven Project"_ e seguir o passo a passo abaixo.
+Selecionar a pasta **"src/test/java"** do _"Maven Project"_ e seguir o passo a passo abaixo.
 
 **1.** Acessar o Menu File >> New > **Other**
 
