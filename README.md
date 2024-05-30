@@ -90,7 +90,33 @@ Then()
 
 ### _Em construção ..._
 
+```
 
+public class ExemploTestNG {
+
+	@Test (priority = 3)
+	public void a_test() {
+		System.out.println("Method A");
+	}
+
+	@Test (priority = 2)
+	public void b_test() {
+		System.out.println("Method B");
+	}
+
+	@Test (priority = 1)
+	public void c_test() {
+		System.out.println("Method C");
+	}
+	
+	@Test (priority = 4)
+	public void d_test() {
+		System.out.println("Method D");
+	}
+	
+}
+
+```
 <br>
 <br>
 
