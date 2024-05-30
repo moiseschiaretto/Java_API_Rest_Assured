@@ -90,6 +90,12 @@ Then()
 
 O **"TestNG"** executará os métodos **@Test** de duas formas sendo em **"ordem alfabética dos nomes dos métodos (letra inicial do nome)"** ou por **"prioridade especificada no parâmetro _(priority = 1)_"**, conforme o exmplo abaixo.
 
+
+### Métodos com Mesma Prioridade
+
+**Pode haver uma chance de que os métodos contenham a mesma prioridade. Nesses casos, testng considera a ordem alfabética dos nomes dos métodos cuja prioridade é a mesma.**
+
+
 ```
 
 public class ExemploTestNG {
@@ -142,7 +148,6 @@ Method C
 Method D
 
 ```
-
 
 
 <br>
