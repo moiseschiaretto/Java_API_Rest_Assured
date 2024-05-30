@@ -475,10 +475,24 @@ https://testng.org/testng-eclipse-update-site
 
 ### 8. Adicionar a "Library TestNG" no Projeto em "Java Build Path"
 
+Selecionar o _"Maven Project"_ criado e seguir o passo a passo abaixo.
+
+**1.** Clicar com o botão direito do mouse sobre o **nome do projeto Maven criado**
+
+**2.** Clicar na opção **"Properties"**
+
+**3.** Na tela **"Properties for _nome do projeto_"** clicar em **"Java Build Path"** no painel à esquerda
+
+**4.** Clicar na **"Guia Libraries"**
+
+**5.** Clicar no botão **"Add Library"**
+
+**6.** Selecionar a opção **"TestNG"**
+
+**7.** Clicar nos botões **"Next", "Finish", "Apply and Close"**
 
 
 
-***
 
 ### 9. Criar uma classe "TestNG class"
 
