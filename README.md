@@ -31,7 +31,18 @@ Objetivo é desenvolver cenários de testes em Java com API REST com Rest Assure
 ## Cenários de Testes de API REST
 
 CRUD com os verbos HTTP, métodos GetAll, GetId, Post, Put, Patch, Delete.
+<br>
 
+|Endpoint	|Método		|Ação		|
+|---------------|---------------|---------------|
+|/users		|GET		|Retorna a lista de usuários				|
+|/users		|POST		|Insere um novo usuário					|
+|/users{id}	|GET		|Retorna o usuário com id = {id}			|
+|/users{id}	|PUT		|Substitui os dados do usuário com id = {id}		|
+|/users{id}	|PATCH		|Altera itens dos dados do usuário com id = {id}	|
+|/users{id}	|DELETE		|Remove o usuário com id = {id}				|
+
+<br>
 
 ![04_Verbos_HTTP_API_REST](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/7ca7d942-54ba-4d16-a1ff-1a192b52bc86)
 
@@ -45,14 +56,6 @@ CRUD com os verbos HTTP, métodos GetAll, GetId, Post, Put, Patch, Delete.
 <br>
 
 ## Script simples do Rest Assured
-<br>
-
-|Keyword	|Explicações das palavras-chaves utilizadas em Rest Assured.io	|
-|---------------|---------------|
-|Dado()		|Given() é um método usado em testes de API para configurar o estado inicial da solicitação HTTP, definindo parâmetros, cabeçalhos e autenticação antes de enviar a solicitação.		|
-|Quando()	|When() é um método usado em testes de API para enviar uma solicitação HTTP com os parâmetros configurados anteriormente pelo método Given(), simulando uma interação com a API.		|
-|Método()	|Method() é um método usado em testes de API para especificar o tipo de método HTTP (GET, POST, PUT, DELETE, etc.) a ser usado na solicitação. Ele define a ação a ser realizada na API durante o teste.		|
-|Então()	|Then() é um método usado em testes de API para verificar o resultado da solicitação HTTP, como o código de status, o corpo da resposta ou outras condições esperadas, validando se a interação com a API ocorreu conforme o esperado.		|
 <br>
 
 ![03_API_REST_ASSURED_BDD](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/2376ed5a-9018-46f5-a7a4-7254944202f9)
@@ -79,13 +82,15 @@ Then()
 <br>
 
 ### Explicações das palavras-chaves utilizadas no Rest Assured, semelhante a escrita do BDD em Gherkin.
-
-
-<img width="608" alt="11_Sintaxe_Rest_Assured" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/8643c874-7b74-4911-9635-5e3fad2364f4">
-
-
 <br>
 
+|Keyword	|Explicações das palavras-chaves utilizadas em Rest Assured.io	|
+|---------------|---------------|
+|Dado()		|Given() é um método usado em testes de API para configurar o estado inicial da solicitação HTTP, definindo parâmetros, cabeçalhos e autenticação antes de enviar a solicitação.		|
+|Quando()	|When() é um método usado em testes de API para enviar uma solicitação HTTP com os parâmetros configurados anteriormente pelo método Given(), simulando uma interação com a API.		|
+|Método()	|Method() é um método usado em testes de API para especificar o tipo de método HTTP (GET, POST, PUT, DELETE, etc.) a ser usado na solicitação. Ele define a ação a ser realizada na API durante o teste.		|
+|Então()	|Then() é um método usado em testes de API para verificar o resultado da solicitação HTTP, como o código de status, o corpo da resposta ou outras condições esperadas, validando se a interação com a API ocorreu conforme o esperado.		|
+<br>
 
 ## Anotações utilizadas no TestNG @Test
 <br>
