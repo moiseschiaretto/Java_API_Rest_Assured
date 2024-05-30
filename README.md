@@ -25,51 +25,7 @@ Objetivo é desenvolver cenários de testes em Java com API REST com Rest Assure
 
 <br>
 
-## Arquivo "pom.xml"
-
-Este arquivo contém todas as dependências do projeto, do **Apache Maven**, site do repositório de dependências:
-
-https://mvnrepository.com
-
-
-![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/dd626147-718b-495d-a6cd-227ebddbe8a9)
-
-
-
-<br>
-
-### Dependências do Arquivo "pom.xml"
-
-A dependência **"rest-assured"** é uma biblioteca Java que simplifica a automação de testes de API REST, oferecendo uma interface fluente para enviar requisições HTTP e validar respostas. Ela é amplamente utilizada para escrever testes automatizados que verificam a funcionalidade e integridade das APIs REST em aplicativos Java.
-
-<br>
-
-O **TestNG** é um framework de teste para Java, é utilizado em testes de API REST para automatizar a execução de casos de testes, verificar a integridade das respostas da API (status HTTP, conteúdo do corpo) e gerar relatórios detalhados sobre os resultados dos testes, simplificando a garantia da qualidade do software.
-
-
-```
-
-<dependencies>
-
-	<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-	<dependency>
-		<groupId>io.rest-assured</groupId>
-		<artifactId>rest-assured</artifactId>
-		<version>5.4.0</version>
-		<scope>test</scope>
-	</dependency>
-
-	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-	<dependency>
-		<groupId>org.testng</groupId>
-		<artifactId>testng</artifactId>
-		<version>7.10.2</version>
-		<scope>test</scope>
-	</dependency>
-
-</dependencies>
-
-```
+## Consultar no final desta documentação o _tópico_ "Configuração do Ambiente de Trabalho" e o _subtópico_ "Pré-requisitos"
 
 <br>
 
@@ -376,6 +332,9 @@ https://testng.org/testng-eclipse-update-site
 
 
 ### 7. Adicionar as dependências no Arquivo "pom.xml" do Projeto
+
+Abaixo consta o link do **repositório do "Apache Maven"** para pesquisar e copiar as dependências do projeto que serão adicionadas ao arquivo "pom.xml" do projeto criado.
+<br>
 
 https://mvnrepository.com
 
