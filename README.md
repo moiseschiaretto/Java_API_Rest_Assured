@@ -248,10 +248,6 @@ public class TestAPI {
 
 
 ## Execuçao e o Report de execução das requisições HTTP da API REST
-
-### Código Java com TestNG no projeto, caminho:
-
-**api_rest/src/test/java/com/autoamtion/api/TestAPI.java**
 <br>
 
 ### Execuçao - resultados no Console e do TestNG
