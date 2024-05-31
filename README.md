@@ -200,7 +200,7 @@ public class TestAPI {
     	System.out.println("@Test enabled = false");
     }
 
-     @Test(priority = 2, enabled = true, groups = {"Grupo 2 - Listar Usuário Id"})
+    @Test(priority = 2, enabled = true, groups = {"Grupo 2 - Listar Usuário Id"})
     public void testGetUserId() {
         RestAssured.baseURI = BASE_URI;
 
@@ -223,22 +223,22 @@ public class TestAPI {
      private void assertStatusCodeGet(int statusCode) {
         assert statusCode == 200 : "Teste de Status Code falhou! Status Code: " + statusCode;
         System.out.println("Status Code = " + statusCode);
-    }
+     }
 
     private void assertResponseTime(long responseTime) {
         assert responseTime <= EXPECTED_RESPONSE_TIME : "Teste de Tempo de Resposta falhou! Tempo de Resposta: " + responseTime;
         System.out.println("Tempo de Resposta = " + responseTime);
-    }
+     }
     
     
-    private void assertUserDetails(Response response) {
-        JsonPath jsonPath = response.jsonPath();
-        assertEquals(jsonPath.getInt("data.id"), USER_ID, "ID do usuário não corresponde ao esperado");
-        assertEquals(jsonPath.getString("data.email"), "george.bluth@reqres.in", "Email do usuário não corresponde ao esperado");
-        assertEquals(jsonPath.getString("data.first_name"), "George", "Primeiro nome do usuário não corresponde ao esperado");
-        assertEquals(jsonPath.getString("data.last_name"), "Bluth", "Último nome do usuário não corresponde ao esperado");
-        assertEquals(jsonPath.getString("data.avatar"), "https://reqres.in/img/faces/1-image.jpg", "URL do avatar do usuário não corresponde ao esperado");
-    }
+     private void assertUserDetails(Response response) {
+	JsonPath jsonPath = response.jsonPath();
+	assertEquals(jsonPath.getInt("data.id"), USER_ID, "ID do usuário não corresponde ao esperado");
+	assertEquals(jsonPath.getString("data.email"), "george.bluth@reqres.in", "Email do usuário não corresponde ao esperado");
+	assertEquals(jsonPath.getString("data.first_name"), "George", "Primeiro nome do usuário não corresponde ao esperado");
+	assertEquals(jsonPath.getString("data.last_name"), "Bluth", "Último nome do usuário não corresponde ao esperado");
+	assertEquals(jsonPath.getString("data.avatar"), "https://reqres.in/img/faces/1-image.jpg", "URL do avatar do usuário não corresponde ao esperado");
+     }
     
 }  
 
