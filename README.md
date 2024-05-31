@@ -247,10 +247,10 @@ public class TestAPI {
 <br>
 
 
-## Execuçao e o Report de execução das requisições HTTP da API REST
+## Execução e o Report de execução das requisições HTTP da API REST
 <br>
 
-### Execuçao - resultados no Console e do TestNG
+### Execução - resultados no Console e do TestNG
 
 | Results of Console   | Results of running class TestAPI |
 |----------------------|----------------------------------|
@@ -258,7 +258,7 @@ public class TestAPI {
 <br>
 
 
-### Report da execução
+### Report da execução das requisições HTTP
 
 **Utilizando o **TestNG** é gerada a pasta **test-output** no projeto, e automaticamente gerado o report no arquivo **index.html**, que pode ser aberto em qualquer navegador Web (browser) para visualizar o report gerado em cada execução do projeto.
 
