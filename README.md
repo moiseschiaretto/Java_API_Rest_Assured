@@ -140,7 +140,7 @@ Method D
 ```
 <br>
 
-**Sem especificar os parâmtros _(priority = 1, enabled = true)_ por exemplo, a execução dos métodos é em _ordem alfabética dos nomes dos métodos (letra inicial do nome)_, conforme o exemplo de resultado abaixo.**
+**Sem especificar os parâmtros _(priority = 1, enabled = true)_ em todos os métodos, por exemplo, a execução dos métodos é em _ordem alfabética dos nomes dos métodos (letra inicial do nome)_, conforme o exemplo de resultado abaixo.**
 
 
 ```
@@ -152,7 +152,7 @@ Method D
 
 ```
 
-**O método o qual esta anotação _(priority = 1, enabled = false)_ é especificada com o parâmetro (enabled = false) por exemplo, não executa este método, conforme o exemplo de resultado abaixo.**
+**O método o qual esta anotação _(priority = 3, enabled = false)_ é especificada com o parâmetro (enabled = false) por exemplo, não executa este método, conforme o exemplo de resultado abaixo.**
 
 
 ```
