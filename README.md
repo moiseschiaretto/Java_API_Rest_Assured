@@ -593,7 +593,7 @@ Selecionar a pasta **"/test_api/src/test/java"** do _"Maven Project"_ e seguir o
 
 **5.** Informar no campo **_Package name_** o nome do pacote, exemplo [automation.api]
 
-**6.** Informar no campo **_Class name_** o nome do "classe TestNG", **IMPORTANTE** _este nome da classe TestNG deverá ser em caixa baixa_
+**6.** Informar no campo **_Class name_** o nome do "classe TestNG"
 
 **7.** Clicar no botão **Finish**
 <br>
