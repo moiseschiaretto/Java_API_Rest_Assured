@@ -188,7 +188,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
-public class test_web {
+public class TestWeb {
     public String baseUrl = "https://bradescosaudeconvenios.com.br";
     public WebDriver driver;
     
