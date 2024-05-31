@@ -152,7 +152,6 @@ public class TestAPI {
 		System.out.println("Status Code = " + statusCode);
 	}
 	
-	
 	private void assertStatusCodePost(int statusCode) {
 		assert statusCode == 201 : "Teste de Status Code falhou! Status Code: " + statusCode;
 		System.out.println("Status Code = " + statusCode);
@@ -167,7 +166,6 @@ public class TestAPI {
 		assert responseTime <= EXPECTED_RESPONSE_TIME : "Teste de Tempo de Resposta falhou! Tempo de Resposta: " + responseTime;
 		System.out.println("Tempo de Resposta = " + responseTime);
 	}
-	
 	
 	private void assertUserDetails(Response response) {
 		JsonPath jsonPath = response.jsonPath();
