@@ -166,7 +166,7 @@ Method D
 ```
 <br>
 
-## Outras anotações utilizadas no TestNG são @BeforeMethod e @AfterMethod
+## Outras anotações utilizadas no TestNG são @BeforeTest e @AfterTest
 <br>
 
 |Anotação TestNG |Explicações da Anotação TestNG 	|
@@ -175,7 +175,7 @@ Method D
 |@AfterTest	  | os métodos sob esta anotação serão executados **após** todos os casos de teste no arquivo TestNG serem executados. |
 <br>
 
-### Exemplo de uso das anotações TestNG com @BeforeMethod e @AfterMethod
+### Exemplo de uso de _teste Web_ das anotações TestNG com @BeforeTest e @AfterTest
 <br>
 
 ```
