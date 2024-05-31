@@ -40,7 +40,6 @@ public class TestAPI {
         assertResponseTime(response.getTime());
     }
     
-    
     @Test(priority = 2, enabled = true, groups = {"Grupo 2 - Listar Usuário Id"})
     public void testGetUserId() {
         RestAssured.baseURI = BASE_URI;
@@ -177,6 +176,5 @@ public class TestAPI {
 		assertEquals(jsonPath.getString("data.first_name"), "George", "Primeiro nome do usuário não corresponde ao esperado");
 		assertEquals(jsonPath.getString("data.last_name"), "Bluth", "Último nome do usuário não corresponde ao esperado");
 		assertEquals(jsonPath.getString("data.avatar"), "https://reqres.in/img/faces/1-image.jpg", "URL do avatar do usuário não corresponde ao esperado");
-	}
-    
+	}   
 }    
