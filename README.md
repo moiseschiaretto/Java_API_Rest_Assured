@@ -103,22 +103,22 @@ O **"TestNG"** executará os métodos **@Test** de duas formas sendo em **"ordem
 
 public class ExemploTestNG {
 
-	@Test (priority = 3)
+	@Test (priority = 3, enabled = true)
 	public void a_test() {
 		System.out.println("Method A");
 	}
 
-	@Test (priority = 2)
+	@Test (priority = 2, enabled = true)
 	public void b_test() {
 		System.out.println("Method B");
 	}
 
-	@Test (priority = 1)
+	@Test (priority = 1, enabled = true)
 	public void c_test() {
 		System.out.println("Method C");
 	}
 	
-	@Test (priority = 4)
+	@Test (priority = 4, enabled = true)
 	public void d_test() {
 		System.out.println("Method D");
 	}
@@ -128,7 +128,7 @@ public class ExemploTestNG {
 ```
 <br>
 
-**O resultado da execução neste exemplo acima será a seguinte.**
+**O resultado da execução neste exemplo acima é a seguinte.**
 
 ```
 
@@ -140,7 +140,7 @@ Method D
 ```
 <br>
 
-**Sem especificar o parâmtro _(priority = 1)_ por exemplo, a execução dos métodos "seria" em _ordem alfabética dos nomes dos métodos (letra inicial do nome)_, conforme o exemplo de resultado abaixo.**
+**Sem especificar os parâmtros _(priority = 1, enabled = true)_ por exemplo, a execução dos métodos é em _ordem alfabética dos nomes dos métodos (letra inicial do nome)_, conforme o exemplo de resultado abaixo.**
 
 
 ```
@@ -151,6 +151,21 @@ Method C
 Method D
 
 ```
+
+**O método o qual esta anotação _(priority = 1, enabled = false)_ é especificada com o parâmetro (enabled = false) por exemplo, não executa este método, conforme o exemplo de resultado abaixo.**
+
+
+```
+
+Method B
+Method A
+Method D
+
+```
+<br>
+
+
+
 
 
 <br>
