@@ -168,13 +168,56 @@ Method D
 
 ## Outras anotações utilizadas no TestNG são @BeforeMethod e @AfterMethod
 <br>
-| Anotação TestNG | Explicações da Anotação TestNG 	|
+
+|Anotação TestNG |Explicações da Anotação TestNG 	|
 |-----------------|-------------------------------------|
-| @BeforeTest	  | os métodos sob esta anotação serão executados **antes** do primeiro caso de teste no arquivo TestNG. |
-| @AfterTest	  | os métodos sob esta anotação serão executados **após** todos os casos de teste no arquivo TestNG serem executados. |
+|@BeforeTest	  | os métodos sob esta anotação serão executados **antes** do primeiro caso de teste no arquivo TestNG. |
+|@AfterTest	  | os métodos sob esta anotação serão executados **após** todos os casos de teste no arquivo TestNG serem executados. |
 <br>
 
+### Exemplo de uso das anotações TestNG com @BeforeMethod e @AfterMethod
+<br>
 
+```
+
+package com.automation.web;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.*;
+
+public class test_web {
+    public String baseUrl = "https://bradescosaudeconvenios.com.br";
+    public WebDriver driver;
+    
+    @BeforeTest
+    public void setBaseUrl() {
+        System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe");
+        driver = new FirefoxDriver();
+        driver.get(baseUrl);
+    }
+    
+    @Test(priority=1, enabled = true)
+    public void verifyTitle() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.titleContains("Bradesco Saúde"));
+        
+        String expectedTitle = "Bradesco Saúde";
+        String actualTitle = driver.getTitle();
+        System.out.println("Actual Title: " + actualTitle);
+        assert actualTitle.contains(expectedTitle) : "Title verification failed!";
+    }
+    
+    @AfterTest
+    public void endSession() {
+        driver.quit();
+    }
+}
+
+
+```
 
 
 
