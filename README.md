@@ -90,6 +90,8 @@ Then()
 
 O **"TestNG"** executará os métodos **@Test** de duas formas sendo em **"ordem alfabética dos nomes dos métodos (letra inicial do nome)"** ou por **"prioridade especificada no parâmetro _(priority = 1)_"**, conforme o exmplo abaixo.
 
+O método o qual esta anotação **_(priority = 3, enabled = false)_** é especificada com o parâmetro **(enabled = false)** por exemplo, não executa este método.
+
 
 ### Métodos com Mesma Prioridade
 
