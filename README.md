@@ -163,6 +163,115 @@ Method D
 
 ```
 <br>
+<br>
+
+
+## Exemplo de um teste de API REST com Rest Assured em Java com TestNG
+
+### Para demais testes de requisições HTTP utilizando os métodos / verbos HTTP (Get, Post, Put, Patch, Delete) consultar o arquivo / classe do projeto em:
+
+**api_rest/src/test/java/com/autoamtion/api/TestAPI.java**
+<br>
+
+```
+
+package com.automation.api;
+
+import org.testng.annotations.Test;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import static io.restassured.RestAssured.given;
+import io.restassured.path.json.JsonPath;
+import static org.testng.Assert.assertEquals;
+
+public class TestAPI {
+    
+    // Documentação da API no site:   https://reqres.in
+    private static final String BASE_URI = "https://reqres.in/api";
+    private static final String ENDPOINT_USERS = "/users/";
+    private static final int USER_ID = 1;
+    private static final String AUTH_TOKEN = "Bearer b7e0f9be923eabf55779250a1266ee97af8c9a99adc308e0d1e5d920ba4d96aa";
+    private static final long EXPECTED_RESPONSE_TIME = 2000;
+    private String userId;
+
+    // Exemplo de teste para não executar (enabled = false), ignorar e visualizar no report
+    @Test(priority = 10, enabled = false, groups = {"Grupo 10 - Não Executar o Método"})
+    public void testDisabled() {
+    	System.out.println("@Test enabled = false");
+    }
+
+     @Test(priority = 2, enabled = true, groups = {"Grupo 2 - Listar Usuário Id"})
+    public void testGetUserId() {
+        RestAssured.baseURI = BASE_URI;
+
+        Response response =
+	        given()
+	            .log().method()
+	            .log().uri()
+	        .when()
+	            .get(ENDPOINT_USERS + USER_ID)
+	        .then()
+	        	.log().body()
+	            .extract().response()
+	        ;
+               
+        assertStatusCodeGet(response.getStatusCode());
+        assertResponseTime(response.getTime());
+        assertUserDetails(response);
+     }
+
+     private void assertStatusCodeGet(int statusCode) {
+        assert statusCode == 200 : "Teste de Status Code falhou! Status Code: " + statusCode;
+        System.out.println("Status Code = " + statusCode);
+    }
+
+    private void assertResponseTime(long responseTime) {
+        assert responseTime <= EXPECTED_RESPONSE_TIME : "Teste de Tempo de Resposta falhou! Tempo de Resposta: " + responseTime;
+        System.out.println("Tempo de Resposta = " + responseTime);
+    }
+    
+    
+    private void assertUserDetails(Response response) {
+        JsonPath jsonPath = response.jsonPath();
+        assertEquals(jsonPath.getInt("data.id"), USER_ID, "ID do usuário não corresponde ao esperado");
+        assertEquals(jsonPath.getString("data.email"), "george.bluth@reqres.in", "Email do usuário não corresponde ao esperado");
+        assertEquals(jsonPath.getString("data.first_name"), "George", "Primeiro nome do usuário não corresponde ao esperado");
+        assertEquals(jsonPath.getString("data.last_name"), "Bluth", "Último nome do usuário não corresponde ao esperado");
+        assertEquals(jsonPath.getString("data.avatar"), "https://reqres.in/img/faces/1-image.jpg", "URL do avatar do usuário não corresponde ao esperado");
+    }
+    
+}  
+
+
+```
+<br>
+
+
+## Execuçao e o Report de execução das requisições HTTP da API REST
+
+### Código Java com TestNG no projeto, caminho:
+
+**api_rest/src/test/java/com/autoamtion/api/TestAPI.java**
+<br>
+
+### Execuçao - resultados no Console e do TestNG
+
+| Results of Console   | Results of running class TestAPI |
+|----------------------|----------------------------------|
+| <img width="528" alt="01_API_EXECUCAO" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/75f86aa6-8397-4323-8c56-9d61a436a46f"> | <img width="958" alt="02_API_EXECUCAO_TESTNG" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/4547f397-ab6a-4368-b9fe-fbfd1456325c"> |
+<br>
+
+
+### Report da execução
+
+**Utilizando o **TestNG** é gerada a pasta **test-output** no projeto, e automaticamente gerado o report no arquivo **index.html**, que pode ser aberto em qualquer navegador Web (browser) para visualizar o report gerado em cada execução do projeto.
+
+
+| Suíte de Testes  	 | Grupos		 | Times		| Métodos Ignorados	| Ordenação da Execução		|
+|------------------------|-----------------------|----------------------|-----------------------|-------------------------------|
+| <img width="578" alt="03_REPORT_1_SUITE_TESTES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/913591fb-15fd-4444-ba54-ae5ade346414"> | <img width="775" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/ae00331c-d192-4a4d-af35-e8c2f6f220cf"> | <img width="837" alt="05_REPORT_TIMES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/058af0c6-8811-48d3-ae2f-e1df3e0ed0e9"> | <img width="576" alt="06_REPORT_METHOD_IGNOREDED" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/29f72e5f-5d70-4bf1-b50a-47d13fbd43b6"> | <img width="591" alt="07_REPORT_ORDER_EXECUTION" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/11fe47dd-6434-47f0-955b-8778f1921d4e"> |
+<br>
+
 
 ## Outras anotações utilizadas no TestNG são @BeforeTest e @AfterTest
 <br>
@@ -222,38 +331,6 @@ public class TestWeb {
 
 ```
 <br>
-
-## Execuçao e o Report de execução das requisições HTTP da API REST
-
-### Código Java TestNG no projeto, caminho:
-
-**api_rest/src/test/java/com/autoamtion/api/TestAPI.java**
-<br>
-
-### Execuçao - resultados no Console e do TestNG
-
-| Results of Console   | Results of running class TestAPI |
-|----------------------|----------------------------------|
-| <img width="528" alt="01_API_EXECUCAO" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/75f86aa6-8397-4323-8c56-9d61a436a46f"> | <img width="958" alt="02_API_EXECUCAO_TESTNG" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/4547f397-ab6a-4368-b9fe-fbfd1456325c"> |
-<br>
-
-
-### Report da execução
-
-**Utilizando o **TestNG** é gerada a pasta **test-output** no projeto, e automaticamente gerado o report no arquivo **index.html**, que pode ser aberto em qualquer navegador Web (browser) para visualizar o report gerado em cada execução do projeto.
-
-
-| Suíte de Testes  	 | Grupos		 | Times		| Métodos Ignorados	| Ordenação da Execução		|
-|------------------------|-----------------------|----------------------|-----------------------|-------------------------------|
-| <img width="578" alt="03_REPORT_1_SUITE_TESTES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/913591fb-15fd-4444-ba54-ae5ade346414"> | <img width="775" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/ae00331c-d192-4a4d-af35-e8c2f6f220cf"> | <img width="837" alt="05_REPORT_TIMES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/058af0c6-8811-48d3-ae2f-e1df3e0ed0e9"> | <img width="576" alt="06_REPORT_METHOD_IGNOREDED" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/29f72e5f-5d70-4bf1-b50a-47d13fbd43b6"> | <img width="591" alt="07_REPORT_ORDER_EXECUTION" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/11fe47dd-6434-47f0-955b-8778f1921d4e"> |
-
-
-
-
-
-
-<br>
-
 <br>
 
 
