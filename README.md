@@ -1,5 +1,3 @@
-# _Em construção ..._
-
 ## Projeto "API REST com Rest Assured e TestNG"
 
 Autor Moisés Ademir Chiaretto
