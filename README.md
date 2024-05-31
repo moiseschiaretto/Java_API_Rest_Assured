@@ -22,9 +22,9 @@ O objetivo é desenvolver cenários de testes em Java com API REST com Rest Assu
 
 
 ## Estrutura do Projeto "API REST com Rest Assured e TestNG"
+<br>
 
-**_Em construção ..._**
-
+<img width="195" alt="00_ESTRUTURA_PROJETO" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/8071ea79-8af1-4da3-ab92-5a7e1b0834d4">
 <br>
 
 
@@ -178,6 +178,11 @@ Method D
 ### Exemplo de uso de _teste Web_ das anotações TestNG com @BeforeTest e @AfterTest
 <br>
 
+### Código Java TestNG no projeto, caminho:
+
+**api_rest/src/test/java/com/autoamtion/web/TestWeb.java**
+
+
 ```
 
 package com.automation.web;
@@ -218,11 +223,37 @@ public class TestWeb {
 
 
 ```
+<br>
+
+## Execuçao e o Report de execução das requisições HTTP da API REST
+
+### Código Java TestNG no projeto, caminho:
+
+**api_rest/src/test/java/com/autoamtion/api/TestAPI.java**
+<br>
+
+### Execuçao - resultados no Console e do TestNG
+
+| Results of Console   | Results of running class TestAPI |
+|----------------------|----------------------------------|
+| <img width="528" alt="01_API_EXECUCAO" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/75f86aa6-8397-4323-8c56-9d61a436a46f"> | <img width="958" alt="02_API_EXECUCAO_TESTNG" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/4547f397-ab6a-4368-b9fe-fbfd1456325c"> |
+<br>
+
+### Report da execução
+
+| Suíte de Testes  	 | Grupos		 | Times		| Métodos Ignorados	| Ordenação da Execução		|
+|------------------------|-----------------------|----------------------|-----------------------|-------------------------------|
+| <img width="578" alt="03_REPORT_1_SUITE_TESTES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/913591fb-15fd-4444-ba54-ae5ade346414"> | <img width="775" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/ae00331c-d192-4a4d-af35-e8c2f6f220cf"> | <img width="837" alt="05_REPORT_TIMES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/058af0c6-8811-48d3-ae2f-e1df3e0ed0e9"> | <img width="576" alt="06_REPORT_METHOD_IGNOREDED" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/29f72e5f-5d70-4bf1-b50a-47d13fbd43b6"> | <img width="591" alt="07_REPORT_ORDER_EXECUTION" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/11fe47dd-6434-47f0-955b-8778f1921d4e"> |
+
+
 
 
 
 
 <br>
+
+<br>
+
 
 ***
 
