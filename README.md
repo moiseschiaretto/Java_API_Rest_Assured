@@ -237,7 +237,11 @@ public class TestWeb {
 | <img width="528" alt="01_API_EXECUCAO" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/75f86aa6-8397-4323-8c56-9d61a436a46f"> | <img width="958" alt="02_API_EXECUCAO_TESTNG" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/4547f397-ab6a-4368-b9fe-fbfd1456325c"> |
 <br>
 
+
 ### Report da execução
+
+**Utilizando o **TestNG** é gerada a pasta **test-output** no projeto, e automaticamente gerado o report no arquivo **index.html**, que pode ser aberto em qualquer navegador Web (browser) para visualizar o report gerado em cada execução do projeto.
+
 
 | Suíte de Testes  	 | Grupos		 | Times		| Métodos Ignorados	| Ordenação da Execução		|
 |------------------------|-----------------------|----------------------|-----------------------|-------------------------------|
