@@ -9,7 +9,7 @@ import static org.testng.Assert.assertEquals;
 
 public class TestAPI {
     
-	// Documentação da API no site:   https://reqres.in
+    // Documentação da API no site:   https://reqres.in
     private static final String BASE_URI = "https://reqres.in/api";
     private static final String ENDPOINT_USERS = "/users/";
     private static final int USER_ID = 1;
@@ -97,78 +97,74 @@ public class TestAPI {
     }
 
     
-	    @Test(priority = 4, enabled = true, groups = {"Grupo 4 - Inserir Usuário com Dados Inválidos - Bad Request = 400"})
-	    public void testPostUserBadRequest() {
-		    RestAssured.baseURI = BASE_URI;
-	        String requestBody = "\\\"name\\\": \\\"Novo Usuário\\\", \\\"email\\\": \\\"novo@usuario.com\\\", \\\"age\\\": 31 ";
-		    
-	        // Corpo de requisição com os dados inválidos (por exemplo, campo obrigatório ausente = e-mail)
-		    Response response =
-	                given()
-	                    .header("Authorization", AUTH_TOKEN)
-	                    .header("Content-Type", "application/json")
-	                    .header("Accept", "application/json")
-	                    .body(requestBody)
-	                .when()
-	                    .post(ENDPOINT_USERS)
-	                .then()
-	                    .log().body()
-	                    .extract().response()
-	                ;
-	
-	        assertStatusCodeBadRequest(response.getStatusCode());
-	        assertResponseTime(response.getTime());
-	    }
+    @Test(priority = 4, enabled = true, groups = {"Grupo 4 - Inserir Usuário com Dados Inválidos - Bad Request = 400"})
+    public void testPostUserBadRequest() {
+	    RestAssured.baseURI = BASE_URI;
+	String requestBody = "\\\"name\\\": \\\"Novo Usuário\\\", \\\"email\\\": \\\"novo@usuario.com\\\", \\\"age\\\": 31 ";
+	    
+	// Corpo de requisição com os dados inválidos (por exemplo, campo obrigatório ausente = e-mail)
+	    Response response =
+		given()
+		    .header("Authorization", AUTH_TOKEN)
+		    .header("Content-Type", "application/json")
+		    .header("Accept", "application/json")
+		    .body(requestBody)
+		.when()
+		    .post(ENDPOINT_USERS)
+		.then()
+		    .log().body()
+		    .extract().response()
+		;
+
+	assertStatusCodeBadRequest(response.getStatusCode());
+	assertResponseTime(response.getTime());
+    }
+
     
-	    
-	    @Test(priority = 5, enabled = true, groups = {"Grupo 5 - Atualizar Usuário"})
-	    public void testPutUser() {
-	        RestAssured.baseURI = BASE_URI;
+    @Test(priority = 5, enabled = true, groups = {"Grupo 5 - Atualizar Usuário"})
+    public void testPutUser() {
+	RestAssured.baseURI = BASE_URI;
 
-	        String requestBody = "{ \"name\": \"Novo Usuário2\", \"email\": \"novo2@usuario.com\" }";
+	String requestBody = "{ \"name\": \"Novo Usuário2\", \"email\": \"novo2@usuario.com\" }";
 
-	        Response response =
-	                given()
-	                    .header("Authorization", AUTH_TOKEN)
-	                    .header("Content-Type", "application/json")
-	                    .header("Accept", "application/json")
-	                    .body(requestBody)
-	                .when()
-	                    .put(ENDPOINT_USERS + userId)
-	                .then()
-	                    .log().body()
-	                    .extract().response()
-	                ;
+	Response response =
+		given()
+		    .header("Authorization", AUTH_TOKEN)
+		    .header("Content-Type", "application/json")
+		    .header("Accept", "application/json")
+		    .body(requestBody)
+		.when()
+		    .put(ENDPOINT_USERS + userId)
+		.then()
+		    .log().body()
+		    .extract().response()
+		;
 
-	        assertStatusCodeGet(response.getStatusCode());
-	        assertResponseTime(response.getTime());
-	    }
+	assertStatusCodeGet(response.getStatusCode());
+	assertResponseTime(response.getTime());
+    }
 	    
-	    
-	    
-	    
-	    @Test(priority = 6, enabled = true, groups = {"Grupo 6 - Excluir Usuário"})
-	    public void testDeleteUser() {
-	        RestAssured.baseURI = BASE_URI;
-       
+    @Test(priority = 6, enabled = true, groups = {"Grupo 6 - Excluir Usuário"})
+    public void testDeleteUser() {
+	RestAssured.baseURI = BASE_URI;
 
-	        Response response =
-	                given()
-	                    .header("Authorization", AUTH_TOKEN)
-	                    .header("Content-Type", "application/json")
-	                    .header("Accept", "application/json")
-	                .when()
-	                    .delete(ENDPOINT_USERS + userId)
-	                .then()
-	                    .log().body()
-	                    .extract().response()
-	                ;
 
-	        assertStatusCodeDelete(response.getStatusCode());
-	        assertResponseTime(response.getTime());
-	    }
-	       
-	    
+	Response response =
+		given()
+		    .header("Authorization", AUTH_TOKEN)
+		    .header("Content-Type", "application/json")
+		    .header("Accept", "application/json")
+		.when()
+		    .delete(ENDPOINT_USERS + userId)
+		.then()
+		    .log().body()
+		    .extract().response()
+		;
+
+	assertStatusCodeDelete(response.getStatusCode());
+	assertResponseTime(response.getTime());
+    }
+
     private void assertStatusCodeDelete(int statusCode) {
     	assert statusCode == 204 : "Teste de Status Code falhou! Status Code: " + statusCode;
         System.out.println("Status Code = " + statusCode);
@@ -206,6 +202,3 @@ public class TestAPI {
     }
     
 }    
-
-
-
