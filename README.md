@@ -173,13 +173,16 @@ Method E
 <br>
 <br>
 
-### O parêmtro groupo, por exemplo, @Test (priority = 1, enabled = true, groups = {"Grupo 1 - Listar Todos os Usuários"})
+
+### O parâmetro _groupo_, por exemplo, @Test (priority = 1, enabled = true, groups = {"Grupo 1 - Listar Todos os Usuários"})
 
 É utilizado para organizar o cenários de testes executados no relatório gerado, conforme o exemplo abaixo.
 
 <img width="775" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/ae00331c-d192-4a4d-af35-e8c2f6f220cf">
 
 <br>
+<br>
+
 
 ## Exemplo de um teste de API REST com Rest Assured em Java com TestNG
 
