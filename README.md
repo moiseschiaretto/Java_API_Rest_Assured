@@ -9,7 +9,7 @@ O objetivo é desenvolver cenários de testes em Java com TestNG, e a API REST c
 ### Consultar no final desta documentação o _tópico_ "Configuração do Ambiente de Trabalho" e o _subtópico_ "Pré-requisitos".
 <br>
 
-|Java		|Apache Maven	|TestNG		|API Rest Assured	|JSON		||IDE Eclipse	|
+|Java		|Apache Maven	|TestNG		|API Rest Assured	|JSON		|IDE Eclipse	|
 |---------------|---------------|---------------|-----------------------|---------------|---------------|
 | <img width="175" alt="00_JDK" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/3235b5a0-52aa-4575-87ec-9979f860e169"> | ![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/3fa7942c-ed5f-401d-92d1-023deb48e154) | <img width="172" alt="00_Logo_TestNG_JAVA" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/6256a00d-4359-4c02-bc12-15788c3ff6b2"> | ![03_API_REST_ASSURED_BDD](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/62679ee5-6603-428b-9f5a-427036acc49f) | <img width="164" alt="04_JSON" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/59400abd-b499-433b-b332-989c0b2c6641"> | <img width="329" alt="10_Logo_IDE_Eclipse" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/920ea6a0-3239-476a-8de5-c380378206f5"> |
 <br>
