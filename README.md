@@ -168,7 +168,7 @@ Method D
 
 ## Exemplo de um teste de API REST com Rest Assured em Java com TestNG
 
-### Para demais testes de requisições HTTP utilizando os métodos / verbos HTTP (GetAll, GetId, Post, Put, Delete) consultar o arquivo / classe _TestAPI.java_ do projeto em:
+### Para demais testes de requisições utilizando os métodos / verbos HTTP (GetAll, GetId, Post, Put, Delete) consultar o arquivo / classe _TestAPI.java_ do projeto em:
 
 **api_rest/src/test/java/com/autoamtion/api/TestAPI.java**
 <br>
