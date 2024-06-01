@@ -174,7 +174,7 @@ Method E
 <br>
 
 
-### O parâmetro _groupo_, por exemplo, @Test (priority = 1, enabled = true, groups = {"Grupo 1 - Listar Todos os Usuários"})
+### O parâmetro _groups_, por exemplo,   @Test (priority = 1, enabled = true, groups = {"Grupo 1 - Listar Todos os Usuários"})
 
 É utilizado para organizar o cenários de testes executados no relatório gerado, conforme o exemplo abaixo.
 
