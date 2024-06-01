@@ -279,10 +279,11 @@ public class TestAPI {
 **Utilizando o **TestNG** é gerada a pasta **test-output** no projeto, e automaticamente gerado o report no arquivo **index.html**, que pode ser aberto em qualquer navegador Web (browser) para visualizar o report gerado em cada execução do projeto.
 
 
-| Suíte de Testes  	 | Grupos		 | Times		| Métodos Ignorados	| Ordenação da Execução		|
-|------------------------|-----------------------|----------------------|-----------------------|-------------------------------| <img width="175" alt="00_JDK" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/2e742da6-9bff-4105-a2f3-364622c75060"> | ![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/a692420d-74ac-4bfb-9136-525a45f3f4c4) | <img width="172" alt="00_Logo_TestNG_JAVA" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/5bbb31d5-caed-4771-86fb-b0571e431141"> | ![03_API_REST_ASSURED_BDD](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/f097a0a6-a384-4866-88c6-fe3492eb61b4) | <img width="329" alt="10_Logo_IDE_Eclipse" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/884a2937-1818-4ebb-be34-ff1e5982583f"> |
+| Suíte de Testes  	 | Grupos		 | Times		| Métodos Ignorados	| Ordenação da Execução		
+|------------------------|-----------------------|----------------------|-----------------------|-------------------------------
+| <img width="607" alt="03_REPORT_1_SUITE_TESTES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/f0dd217f-0cb4-4c20-b0e1-f7cc9d7f71cb"> | <img width="959" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/dd4714a8-64d8-489f-94e8-d6a56ed6b92b"> | <img width="959" alt="05_REPORT_TIMES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/4bc3e594-05ab-49f3-a8e3-7c98cb543a4c"> | <img width="958" alt="06_REPORT_METHOD_IGNOREDED" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/d8f2126b-b9f9-4d46-b18e-fbf34c5b4b87"> | <img width="959" alt="07_REPORT_ORDER_EXECUTION" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/b0aede47-5473-479f-a76f-5798d1f92ccf"> |
 <br>
-
+<br>
 
 ## Outras anotações utilizadas no TestNG são @BeforeTest e @AfterTest
 <br>
