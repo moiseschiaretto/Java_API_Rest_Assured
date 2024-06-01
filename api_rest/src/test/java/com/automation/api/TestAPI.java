@@ -17,12 +17,12 @@ public class TestAPI {
     private String userId;
 
     // Exemplo de teste para não executar (enabled = false), ignorar e visualizar no report
-    @Test(priority = 10, enabled = false, groups = {"Grupo 10 - Não Executar o Método"})
+    @Test(priority = 10, enabled = false, groups = {"10 - Não Executar"})
     public void testDisabled() {
     	System.out.println("@Test enabled = false");
     }
    
-    @Test(priority = 1, enabled = true, groups = {"Grupo 1 - Listar todos os Usuários"})
+    @Test(priority = 1, enabled = true, groups = {"1 - Listar Usuários})
     public void testGetAllUsers() {
         RestAssured.baseURI = BASE_URI;
         String endPoint = "/users/";
@@ -40,7 +40,7 @@ public class TestAPI {
         assertResponseTime(response.getTime());
     }
     
-    @Test(priority = 2, enabled = true, groups = {"Grupo 1 - Listar Usuário Id"})
+    @Test(priority = 2, enabled = true, groups = {"1 - Listar Usuários"})
     public void testGetUserId() {
         RestAssured.baseURI = BASE_URI;
         Response response =
@@ -58,7 +58,7 @@ public class TestAPI {
         assertUserDetails(response);
      }
 
-     @Test(priority = 3, enabled = true, groups = {"Grupo 2 - Inserir Usuário"})
+     @Test(priority = 3, enabled = true, groups = {"2 - Inserir Usuário"})
      public void testPostUser() {
 	RestAssured.baseURI = BASE_URI;
 	String requestBody = "{ \"name\": \"Novo Usuário\", \"email\": \"novo@usuario.com\", \"age\": 31 }";
@@ -83,7 +83,7 @@ public class TestAPI {
 	userId = jsonPath.getString("id");
      }
 
-     @Test(priority = 4, enabled = true, groups = {"Grupo 2 - Inserir Usuário com Dados Inválidos - Bad Request = 400"})
+     @Test(priority = 4, enabled = true, groups = {"2 - Inserir Usuário"})
      public void testPostUserBadRequest() {
 	RestAssured.baseURI = BASE_URI;
 	// Corpo de requisição com os dados em formato inválido
@@ -104,7 +104,7 @@ public class TestAPI {
 	 assertResponseTime(response.getTime());
       }
 
-      @Test(priority = 5, enabled = true, groups = {"Grupo 3 - Atualizar Usuário"})
+      @Test(priority = 5, enabled = true, groups = {"3 - Atualizar Usuário"})
       public void testPutUser() {
 	 RestAssured.baseURI = BASE_URI;
 	 String requestBody = "{ \"name\": \"Novo Usuário2\", \"email\": \"novo2@usuario.com\" }";
@@ -124,7 +124,7 @@ public class TestAPI {
 	 assertResponseTime(response.getTime());
       }
 	    
-      @Test(priority = 6, enabled = true, groups = {"Grupo 4 - Excluir Usuário"})
+      @Test(priority = 6, enabled = true, groups = {"4 - Excluir Usuário"})
       public void testDeleteUser() {
 	 RestAssured.baseURI = BASE_URI;
  	 Response response =
