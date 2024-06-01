@@ -11,11 +11,7 @@ O objetivo é desenvolver cenários de testes em Java com TestNG, e a API REST c
 
 |Java		|Apache Maven	|TestNG		|API Rest Assured	|IDE Eclipse	|
 |---------------|---------------|---------------|-----------------------|---------------|
-| <img width="175" alt="00_JDK" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/2e742da6-9bff-4105-a2f3-364622c75060"> | ![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/a692420d-74ac-4bfb-9136-525a45f3f4c4) | <img width="172" alt="00_Logo_TestNG_JAVA" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/5bbb31d5-caed-4771-86fb-b0571e431141"> | ![03_API_REST_ASSURED_BDD](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/f097a0a6-a384-4866-88c6-fe3492eb61b4) | <img width="329" alt="10_Logo_IDE_Eclipse" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/884a2937-1818-4ebb-be34-ff1e5982583f"> |
-
-
-
-
+| <img width="175" alt="00_JDK" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/3235b5a0-52aa-4575-87ec-9979f860e169"> | ![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/3fa7942c-ed5f-401d-92d1-023deb48e154) | <img width="172" alt="00_Logo_TestNG_JAVA" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/6256a00d-4359-4c02-bc12-15788c3ff6b2"> | ![03_API_REST_ASSURED_BDD](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/62679ee5-6603-428b-9f5a-427036acc49f) | <img width="329" alt="10_Logo_IDE_Eclipse" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/920ea6a0-3239-476a-8de5-c380378206f5"> |
 <br>
 
 
@@ -284,7 +280,7 @@ public class TestAPI {
 
 
 | Suíte de Testes  	 | Grupos		 | Times		| Métodos Ignorados	| Ordenação da Execução		|
-|------------------------|-----------------------|----------------------|-----------------------|-------------------------------| <img width="607" alt="03_REPORT_1_SUITE_TESTES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/3cec57e6-0c40-48ca-9cdd-2a113813b267"> | <img width="959" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/67694b63-d78c-4451-a4ac-c329986b70ae"> | <img width="959" alt="05_REPORT_TIMES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/3ccdcc72-ad5d-4468-bcb8-88d3751ae1b9"> | <img width="958" alt="06_REPORT_METHOD_IGNOREDED" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/df77a86f-dcaa-4175-913a-d3e116d9cbe9"> | <img width="959" alt="07_REPORT_ORDER_EXECUTION" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/41fe82a0-3da2-4d9e-a3f8-cc1c87b08f31"> |
+|------------------------|-----------------------|----------------------|-----------------------|-------------------------------| <img width="175" alt="00_JDK" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/2e742da6-9bff-4105-a2f3-364622c75060"> | ![06_Apache_Maven](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/a692420d-74ac-4bfb-9136-525a45f3f4c4) | <img width="172" alt="00_Logo_TestNG_JAVA" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/5bbb31d5-caed-4771-86fb-b0571e431141"> | ![03_API_REST_ASSURED_BDD](https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/f097a0a6-a384-4866-88c6-fe3492eb61b4) | <img width="329" alt="10_Logo_IDE_Eclipse" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/884a2937-1818-4ebb-be34-ff1e5982583f"> |
 <br>
 
 
