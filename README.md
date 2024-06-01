@@ -103,24 +103,29 @@ O método o qual esta anotação **_(priority = 3, enabled = false)_** é especi
 
 public class ExemploTestNG {
 
-	@Test (priority = 3, enabled = true)
+	@Test (priority = 3, enabled = true, groups = {"Grupo 3 - Inserir Usuário"})
 	public void a_test() {
 		System.out.println("Method A");
 	}
 
-	@Test (priority = 2, enabled = true)
+	@Test (priority = 2, enabled = true, groups = {"Grupo 2 - Listar Usuário Id"})
 	public void b_test() {
 		System.out.println("Method B");
 	}
 
-	@Test (priority = 1, enabled = true)
+	@Test (priority = 1, enabled = true, groups = {"Grupo 1 - Listar Todos os Usuários"})
 	public void c_test() {
 		System.out.println("Method C");
 	}
 	
-	@Test (priority = 4, enabled = true)
+	@Test (priority = 4, enabled = true, groups = {"Grupo 4 - Atualizar Usuário"})
 	public void d_test() {
 		System.out.println("Method D");
+	}
+
+	@Test (priority = 5, enabled = true, groups = {"Grupo 5 - Excluir Usuário"})
+	public void e_test() {
+		System.out.println("Method E");
 	}
 	
 }
@@ -136,6 +141,7 @@ Method C
 Method B
 Method A
 Method D
+Method E
 
 ```
 <br>
@@ -149,22 +155,31 @@ Method A
 Method B
 Method C
 Method D
+Method E
 
 ```
 
-**O método o qual esta anotação _(priority = 3, enabled = false)_ é especificada com o parâmetro (enabled = false) por exemplo, não executa este método, conforme o exemplo de resultado abaixo.**
+**O método o qual esta anotação _(priority = 3, enabled = false)_ é especificada com o parâmetro (enabled = false) por exemplo, não executa este método, e com a _prioridade de execução_ o resultado é o exibido abaixo.**
 
 
 ```
 
+Method C
 Method B
-Method A
 Method D
+Method E
 
 ```
 <br>
 <br>
 
+### O parêmtro groupo, por exemplo, @Test (priority = 1, enabled = true, groups = {"Grupo 1 - Listar Todos os Usuários"})
+
+É utilizado para organizar o cenários de testes executados no relatório gerado, conforme o exemplo abaixo.
+
+<img width="775" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/ae00331c-d192-4a4d-af35-e8c2f6f220cf">
+
+<br>
 
 ## Exemplo de um teste de API REST com Rest Assured em Java com TestNG
 
