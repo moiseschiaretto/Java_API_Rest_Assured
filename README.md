@@ -103,12 +103,12 @@ O método o qual esta anotação **_(priority = 3, enabled = false)_** é especi
 
 public class ExemploTestNG {
 
-	@Test (priority = 3, enabled = true, groups = {"Grupo 3 - Inserir Usuário"})
+	@Test (priority = 3, enabled = true, groups = {"Grupo 2 - Inserir Usuário"})
 	public void a_test() {
 		System.out.println("Method A");
 	}
 
-	@Test (priority = 2, enabled = true, groups = {"Grupo 2 - Listar Usuário Id"})
+	@Test (priority = 2, enabled = true, groups = {"Grupo 1 - Listar Usuário Id"})
 	public void b_test() {
 		System.out.println("Method B");
 	}
@@ -118,12 +118,12 @@ public class ExemploTestNG {
 		System.out.println("Method C");
 	}
 	
-	@Test (priority = 4, enabled = true, groups = {"Grupo 4 - Atualizar Usuário"})
+	@Test (priority = 4, enabled = true, groups = {"Grupo 3 - Atualizar Usuário"})
 	public void d_test() {
 		System.out.println("Method D");
 	}
 
-	@Test (priority = 5, enabled = true, groups = {"Grupo 5 - Excluir Usuário"})
+	@Test (priority = 5, enabled = true, groups = {"Grupo 4 - Excluir Usuário"})
 	public void e_test() {
 		System.out.println("Method E");
 	}
