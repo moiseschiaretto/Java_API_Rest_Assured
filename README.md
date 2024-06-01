@@ -103,27 +103,27 @@ O método o qual esta anotação **_(priority = 3, enabled = false)_** é especi
 
 public class ExemploTestNG {
 
-	@Test (priority = 3, enabled = true, groups = {"Grupo 2 - Inserir Usuário"})
+	@Test (priority = 3, enabled = true, groups = {"2 - Inserir Usuário"})
 	public void a_test() {
 		System.out.println("Method A");
 	}
 
-	@Test (priority = 2, enabled = true, groups = {"Grupo 1 - Listar Usuário Id"})
+	@Test (priority = 2, enabled = true, groups = {"1 - Listar Usuários"})
 	public void b_test() {
 		System.out.println("Method B");
 	}
 
-	@Test (priority = 1, enabled = true, groups = {"Grupo 1 - Listar Todos os Usuários"})
+	@Test (priority = 1, enabled = true, groups = {"1 - Listar Usuários"})
 	public void c_test() {
 		System.out.println("Method C");
 	}
 	
-	@Test (priority = 4, enabled = true, groups = {"Grupo 3 - Atualizar Usuário"})
+	@Test (priority = 4, enabled = true, groups = {"3 - Atualizar Usuário"})
 	public void d_test() {
 		System.out.println("Method D");
 	}
 
-	@Test (priority = 5, enabled = true, groups = {"Grupo 4 - Excluir Usuário"})
+	@Test (priority = 5, enabled = true, groups = {"4 - Excluir Usuário"})
 	public void e_test() {
 		System.out.println("Method E");
 	}
@@ -174,11 +174,13 @@ Method E
 <br>
 
 
-### O parâmetro _groups_, por exemplo,   @Test (priority = 1, enabled = true, groups = {"Grupo 1 - Listar Todos os Usuários"})
+### O parâmetro _groups_, por exemplo,   @Test (priority = 1, enabled = true, groups = {"1 - Listar Usuários"})
 
 É utilizado para organizar o cenários de testes executados no relatório gerado, conforme o exemplo abaixo.
 
-<img width="775" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/ae00331c-d192-4a4d-af35-e8c2f6f220cf">
+
+<img width="959" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/d60fd7e4-9ed5-4fc3-98e4-b57f6247dff7">
+
 
 <br>
 <br>
@@ -213,12 +215,12 @@ public class TestAPI {
     private String userId;
 
     // Exemplo de teste para não executar (enabled = false), ignorar e visualizar no report
-    @Test(priority = 10, enabled = false, groups = {"Grupo 10 - Não Executar o Método"})
+    @Test(priority = 10, enabled = false, groups = {"10 - Não Executar"})
     public void testDisabled() {
     	System.out.println("@Test enabled = false");
     }
 
-    @Test(priority = 2, enabled = true, groups = {"Grupo 2 - Listar Usuário Id"})
+    @Test(priority = 2, enabled = true, groups = {"1 - Listar Usuários"})
     public void testGetUserId() {
         RestAssured.baseURI = BASE_URI;
 
@@ -282,8 +284,7 @@ public class TestAPI {
 
 
 | Suíte de Testes  	 | Grupos		 | Times		| Métodos Ignorados	| Ordenação da Execução		|
-|------------------------|-----------------------|----------------------|-----------------------|-------------------------------|
-| <img width="578" alt="03_REPORT_1_SUITE_TESTES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/913591fb-15fd-4444-ba54-ae5ade346414"> | <img width="775" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/ae00331c-d192-4a4d-af35-e8c2f6f220cf"> | <img width="837" alt="05_REPORT_TIMES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/058af0c6-8811-48d3-ae2f-e1df3e0ed0e9"> | <img width="576" alt="06_REPORT_METHOD_IGNOREDED" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/29f72e5f-5d70-4bf1-b50a-47d13fbd43b6"> | <img width="591" alt="07_REPORT_ORDER_EXECUTION" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/11fe47dd-6434-47f0-955b-8778f1921d4e"> |
+|------------------------|-----------------------|----------------------|-----------------------|-------------------------------| <img width="607" alt="03_REPORT_1_SUITE_TESTES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/3cec57e6-0c40-48ca-9cdd-2a113813b267"> | <img width="959" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/67694b63-d78c-4451-a4ac-c329986b70ae"> | <img width="959" alt="05_REPORT_TIMES" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/3ccdcc72-ad5d-4468-bcb8-88d3751ae1b9"> | <img width="958" alt="06_REPORT_METHOD_IGNOREDED" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/df77a86f-dcaa-4175-913a-d3e116d9cbe9"> | <img width="959" alt="07_REPORT_ORDER_EXECUTION" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/41fe82a0-3da2-4d9e-a3f8-cc1c87b08f31"> |
 <br>
 
 
