@@ -2,7 +2,16 @@
 <suite name="api_rest">
     <test name="TestAPI">
         <classes>
-            <class name="com.automation.api.TestAPI"/>
+            <class name="com.automation.api.TestAPI">
+                <methods>
+                    <include name="testGetAllUsers" />
+                    <include name="testGetUserId" />
+                    <include name="testPostUser" />
+                    <include name="testPostUserBadRequest" />
+                    <include name="testPutUser" />
+                    <include name="testDeleteUser" />
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
