@@ -172,7 +172,7 @@ Method E
 
 ### O parâmetro _groups_, por exemplo,   @Test (priority = 1, enabled = true, groups = {"1 - Listar Usuários"})
 
-É utilizado para organizar o cenários de testes executados no relatório gerado, conforme o exemplo abaixo.
+O parâmetro é utilizado para agrupar os cenários de testes executados no relatório gerado, conforme o exemplo abaixo.
 
 
 <img width="959" alt="04_REPORT_GRUPOS" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/d60fd7e4-9ed5-4fc3-98e4-b57f6247dff7">
