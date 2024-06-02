@@ -285,6 +285,37 @@ public class TestAPI {
 <br>
 <br>
 
+## Arquivo "testng.xml"
+
+### Caminho para o arquivo _"testng.xml"_ na estrutura do projeto.
+
+**api_rest/src/test/resources/testng.xml**
+
+```
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="api_rest">
+    <test name="TestAPI">
+        <classes>
+            <class name="com.automation.api.TestAPI">
+                <methods>
+                    <include name="testGetAllUsers" />
+                    <include name="testGetUserId" />
+                    <include name="testPostUser" />
+                    <include name="testPostUserBadRequest" />
+                    <include name="testPutUser" />
+                    <include name="testDeleteUser" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+```
+
+<br>
+
+
 ## Outras anotações utilizadas no TestNG são @BeforeTest e @AfterTest
 <br>
 
