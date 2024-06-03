@@ -98,7 +98,7 @@ public class TestAPI {
 			;
 		 assertStatusCodeBadRequest(response.getStatusCode());
 		 assertResponseTime(response.getTime());
-	      }
+     }
 
       @Test(priority = 5, enabled = true, groups = {"3 - Atualizar Usuário"})
       public void testPutUser() {
@@ -118,7 +118,7 @@ public class TestAPI {
 			;
 		 assertStatusCodeGet(response.getStatusCode());
 		 assertResponseTime(response.getTime());
-	      }
+      }
 	    
       @Test(priority = 6, enabled = true, groups = {"4 - Excluir Usuário"})
       public void testDeleteUser() {
