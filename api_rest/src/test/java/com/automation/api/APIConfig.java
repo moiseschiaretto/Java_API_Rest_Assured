@@ -1,6 +1,7 @@
 package com.automation.api;
 
 public class APIConfig {
+    // Documentação da API no site:   https://reqres.in 
     public static final String BASE_URI = "https://reqres.in/api";
     public static final String ENDPOINT_USERS = "/users/";
     public static final String AUTH_TOKEN = "Bearer b7e0f9be923eabf55779250a1266ee97af8c9a99adc308e0d1e5d920ba4d96aa";
