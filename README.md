@@ -188,6 +188,25 @@ O parâmetro é utilizado para agrupar os cenários de testes executados no rela
 
 ### Para demais testes de requisições utilizando os métodos / verbos HTTP (GetAll, GetId, Post, Put, Delete) consultar o arquivo / classe _TestAPI.java_ do projeto em:
 
+**api_rest/src/test/java/com/autoamtion/api/ConfigAPI.java**
+<br>
+```
+
+package com.automation.api;
+
+public class ConfigAPI {
+    // Documentação da API no site:   https://reqres.in
+    public static final String BASE_URI = "https://reqres.in/api";
+    public static final String ENDPOINT_USERS = "/users/";
+    public static final String AUTH_TOKEN = "Bearer b7e0f9be923eabf55779250a1266ee97af8c9a99adc308e0d1e5d920ba4d96aa";
+    public static final long EXPECTED_RESPONSE_TIME = 2000;
+    public static final int USER_ID = 1;
+}
+
+
+```
+<br>
+
 **api_rest/src/test/java/com/autoamtion/api/TestAPI.java**
 <br>
 
@@ -203,14 +222,6 @@ import io.restassured.path.json.JsonPath;
 import static org.testng.Assert.assertEquals;
 
 public class TestAPI {
-    
-    // Documentação da API no site:   https://reqres.in
-    private static final String BASE_URI = "https://reqres.in/api";
-    private static final String ENDPOINT_USERS = "/users/";
-    private static final int USER_ID = 1;
-    private static final String AUTH_TOKEN = "Bearer b7e0f9be923eabf55779250a1266ee97af8c9a99adc308e0d1e5d920ba4d96aa";
-    private static final long EXPECTED_RESPONSE_TIME = 2000;
-    private String userId;
 
     // Exemplo de teste para não executar (enabled = false), ignorar e visualizar no report
     @Test(priority = 10, enabled = false, groups = {"10 - Não Executar"})
@@ -218,48 +229,44 @@ public class TestAPI {
     	System.out.println("@Test enabled = false");
     }
 
-    @Test(priority = 2, enabled = true, groups = {"1 - Listar Usuários"})
+     @Test(priority = 2, enabled = true, groups = {"1 - Listar Usuários"})
     public void testGetUserId() {
-        RestAssured.baseURI = BASE_URI;
-
+    	RestAssured.baseURI = ConfigAPI.BASE_URI;
         Response response =
 	        given()
 	            .log().method()
 	            .log().uri()
 	        .when()
-	            .get(ENDPOINT_USERS + USER_ID)
+	            .get(ConfigAPI.ENDPOINT_USERS + ConfigAPI.USER_ID)
 	        .then()
 	        	.log().body()
 	            .extract().response()
-	        ;
-               
+	        ;   
         assertStatusCodeGet(response.getStatusCode());
         assertResponseTime(response.getTime());
         assertUserDetails(response);
      }
 
      private void assertStatusCodeGet(int statusCode) {
-        assert statusCode == 200 : "Teste de Status Code falhou! Status Code: " + statusCode;
-        System.out.println("Status Code = " + statusCode);
+		assert statusCode == 200 : "Teste de Status Code falhou! Status Code: " + statusCode;
+		System.out.println("Status Code = " + statusCode);
      }
 
-    private void assertResponseTime(long responseTime) {
-        assert responseTime <= EXPECTED_RESPONSE_TIME : "Teste de Tempo de Resposta falhou! Tempo de Resposta: " + responseTime;
-        System.out.println("Tempo de Resposta = " + responseTime);
+     private void assertResponseTime(long responseTime) {
+		assert responseTime <= ConfigAPI.EXPECTED_RESPONSE_TIME : "Teste de Tempo de Resposta falhou! Tempo de Resposta: " + responseTime;
+		System.out.println("Tempo de Resposta = " + responseTime);
      }
-    
-    
+
      private void assertUserDetails(Response response) {
-	JsonPath jsonPath = response.jsonPath();
-	assertEquals(jsonPath.getInt("data.id"), USER_ID, "ID do usuário não corresponde ao esperado");
-	assertEquals(jsonPath.getString("data.email"), "george.bluth@reqres.in", "Email do usuário não corresponde ao esperado");
-	assertEquals(jsonPath.getString("data.first_name"), "George", "Primeiro nome do usuário não corresponde ao esperado");
-	assertEquals(jsonPath.getString("data.last_name"), "Bluth", "Último nome do usuário não corresponde ao esperado");
-	assertEquals(jsonPath.getString("data.avatar"), "https://reqres.in/img/faces/1-image.jpg", "URL do avatar do usuário não corresponde ao esperado");
+		JsonPath jsonPath = response.jsonPath();
+		assertEquals(jsonPath.getInt("data.id"), ConfigAPI.USER_ID, "ID do usuário não corresponde ao esperado");
+		assertEquals(jsonPath.getString("data.email"), "george.bluth@reqres.in", "Email do usuário não corresponde ao esperado");
+		assertEquals(jsonPath.getString("data.first_name"), "George", "Primeiro nome do usuário não corresponde ao esperado");
+		assertEquals(jsonPath.getString("data.last_name"), "Bluth", "Último nome do usuário não corresponde ao esperado");
+		assertEquals(jsonPath.getString("data.avatar"), "https://reqres.in/img/faces/1-image.jpg", "URL do avatar do usuário não corresponde ao esperado");
      }
-    
-}  
 
+}    
 
 ```
 <br>
