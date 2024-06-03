@@ -8,7 +8,8 @@ import io.restassured.path.json.JsonPath;
 import static org.testng.Assert.assertEquals;
 
 public class TestAPI {
-    // Documentação da API no site:   https://reqres.in
+    
+    @SuppressWarnings("unused")	
     private String userId;
 
     // Exemplo de teste para não executar (enabled = false), ignorar e visualizar no report
