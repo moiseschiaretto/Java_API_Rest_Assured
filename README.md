@@ -243,7 +243,7 @@ public class TestAPI {
 	        	.log().body()
 	            .extract().response()
 	        ;   
-        AssertsAPI. assertStatusCodeGet(response.getStatusCode());
+        AssertsAPI.assertStatusCodeGet(response.getStatusCode());
         AssertsAPI.assertResponseTime(response.getTime());
         AssertsAPI.assertUserDetails(response);
      }
