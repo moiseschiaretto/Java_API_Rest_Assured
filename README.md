@@ -17,7 +17,7 @@ O objetivo é desenvolver cenários de testes em Java com TestNG, e a API REST c
 ## Estrutura do Projeto "API REST com Rest Assured e TestNG"
 <br>
 
-<img width="194" alt="01_ESTRUTURA_PROJETO" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/30c624a7-e131-4588-8aaa-6dcc13f76380" height="300" width="">
+<img width="212" alt="00_ESTRUTURA_PROJETO" src="https://github.com/moiseschiaretto/Java_API_Rest_Assured/assets/84775466/1b2cede2-92ab-4102-b23b-702d7d1c0930" height="300" width="">
 
 <br>
 
