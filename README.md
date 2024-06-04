@@ -215,9 +215,8 @@ package com.automation.api;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import static io.restassured.RestAssured.given;
 import io.restassured.path.json.JsonPath;
-import static org.testng.Assert.assertEquals;
+import static io.restassured.RestAssured.given;
 
 public class TestAPI {
 
@@ -240,28 +239,9 @@ public class TestAPI {
 	        	.log().body()
 	            .extract().response()
 	        ;   
-        assertStatusCodeGet(response.getStatusCode());
-        assertResponseTime(response.getTime());
-        assertUserDetails(response);
-     }
-
-     private void assertStatusCodeGet(int statusCode) {
-		assert statusCode == 200 : "Teste de Status Code falhou! Status Code: " + statusCode;
-		System.out.println("Status Code = " + statusCode);
-     }
-
-     private void assertResponseTime(long responseTime) {
-		assert responseTime <= ConfigAPI.EXPECTED_RESPONSE_TIME : "Teste de Tempo de Resposta falhou! Tempo de Resposta: " + responseTime;
-		System.out.println("Tempo de Resposta = " + responseTime);
-     }
-
-     private void assertUserDetails(Response response) {
-		JsonPath jsonPath = response.jsonPath();
-		assertEquals(jsonPath.getInt("data.id"), ConfigAPI.USER_ID, "ID do usuário não corresponde ao esperado");
-		assertEquals(jsonPath.getString("data.email"), "george.bluth@reqres.in", "Email do usuário não corresponde ao esperado");
-		assertEquals(jsonPath.getString("data.first_name"), "George", "Primeiro nome do usuário não corresponde ao esperado");
-		assertEquals(jsonPath.getString("data.last_name"), "Bluth", "Último nome do usuário não corresponde ao esperado");
-		assertEquals(jsonPath.getString("data.avatar"), "https://reqres.in/img/faces/1-image.jpg", "URL do avatar do usuário não corresponde ao esperado");
+        AssertsAPI. assertStatusCodeGet(response.getStatusCode());
+        AssertsAPI.assertResponseTime(response.getTime());
+        AssertsAPI.assertUserDetails(response);
      }
 
 }    
