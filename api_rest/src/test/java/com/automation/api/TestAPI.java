@@ -3,8 +3,8 @@ package com.automation.api;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import static io.restassured.RestAssured.given;
 import io.restassured.path.json.JsonPath;
+import static io.restassured.RestAssured.given;
 
 public class TestAPI {
     
