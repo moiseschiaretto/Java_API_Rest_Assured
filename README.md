@@ -240,7 +240,7 @@ public class TestAPI {
 	        .when()
 	            .get(ConfigAPI.ENDPOINT_USERS + ConfigAPI.USER_ID)
 	        .then()
-	        	.log().body()
+		    .log().body()
 	            .extract().response()
 	        ;   
         AssertsAPI.assertStatusCodeGet(response.getStatusCode());
